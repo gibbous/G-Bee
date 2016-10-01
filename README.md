@@ -1,10 +1,15 @@
-#H1 G-Bee
+# G-Bee
 
-##H2Overview:
+##Overview:
 
 Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire diabetic patients to better track their blood glucose readings with virtual medals and data visualization. It is valuable for diabetic patients to better understand and manage their blood glucose levels to minimize diabetic complications.  Our app will reward patients for logging their results and achieving glucose readings within ADA guidelines. The app will also make data available for review with a patient's healthcare team.
 
-##H2 Design Layout:
+[Minutes from Original Planning](../blob/master/Final Project - GBee.doc)
+
+[Original Artboard](../blob/master/gbee.pdf)
+
+
+## Design Layout:
 
 **Splash Page:**
 ![G-Bee splash page.png](splash page.png)
@@ -41,22 +46,22 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 ![G-Bee social.png](social.png)
 
 
-##H2 Roles:
+## Roles:
 
-Amanda Hoffman: Team Captain/ Architect
-Julian Biebelberg: Patient Information Content Manager
-Rangy Abines: Data Visualization
++Amanda Hoffman: Team Captain/ Architect
++Julian Biebelberg: Patient Information Content Manager
++Rangy Abines: Data Visualization
               UX Design
-Stephen Doe: User Experience Research and Design
++Stephen Doe: User Experience Research and Design
              Git Conflict Manager
-Thom Keel: Database Administration
++Thom Keel: Database Administration
            Keeper of Minutes
 
-##H2 Schedule (see Trello for details):
+## Schedule (see Trello for details):
 
-10/1: basic framework and layout
-10/8: working prototype
-10/15: live app
++10/1: basic framework and layout
++10/8: working prototype
++10/15: live app
 
 ##H2Project Management (Trello):
 
