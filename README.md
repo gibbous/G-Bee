@@ -52,7 +52,7 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 * Julian Biebelberg: Patient Information Content Manager
 * Rangy Abines: Data Visualization/ UX Design
 * Stephen Doe: UX Research and Design/ Git Conflict Manager
-* Thom Keel: Database Administration/ Secretary
+* Tom Keel: Database Administration/ Secretary
 
 ## Schedule (see Trello for details):
 
