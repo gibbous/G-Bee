@@ -5,6 +5,7 @@ Splash Page:
 
 
 After Sign In:
+
 ![G-Bee afterSignIn.png](afterSignIn.png)
 
 Features:
