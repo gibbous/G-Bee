@@ -48,22 +48,19 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 
 ## Roles:
 
-+Amanda Hoffman: Team Captain/ Architect
-+Julian Biebelberg: Patient Information Content Manager
-+Rangy Abines: Data Visualization
-              UX Design
-+Stephen Doe: User Experience Research and Design
-             Git Conflict Manager
-+Thom Keel: Database Administration
-           Keeper of Minutes
+* Amanda Hoffman: Team Captain/ Architect
+* Julian Biebelberg: Patient Information Content Manager
+* Rangy Abines: Data Visualization/ UX Design
+* Stephen Doe: UX Research and Design/ Git Conflict Manager
+* Thom Keel: Database Administration/ Secretary
 
 ## Schedule (see Trello for details):
 
-+10/1: basic framework and layout
-+10/8: working prototype
-+10/15: live app
+* 10/1: basic framework and layout
+* 10/8: working prototype
+* 10/15: live app
 
-##H2Project Management (Trello):
+##Project Management (Trello):
 
 https://trello.com/b/SntazucZ/g-bee
 
