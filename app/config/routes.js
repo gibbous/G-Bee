@@ -12,8 +12,8 @@ var IndexRoute  = Router.IndexRoute;
 var Main = require('../components/Main');
 var Child1 = require('../components/Children/Child1'); 
 var Child2 = require('../components/Children/Child2'); 
-var GrandChild1 = require('../components/Children/Grandchildren/GrandChild1');
-var GrandChild2 = require('../components/Children/Grandchildren/GrandChild2');
+var GrandChild1 = require('../components/Children/GrandChildren/GrandChild1');
+var GrandChild2 = require('../components/Children/GrandChildren/GrandChild2');
 
 var Log = require('../components/Children/Log'); 
 var Timer = require('../components/Children/Timer'); 

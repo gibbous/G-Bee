@@ -5,7 +5,7 @@
   "main": "public/index.html",
   "repository": "",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "node ./app/app.js",
     "prod": "NODE_ENV=production node server.js",
     "postinstall": "webpack -p"
   },
