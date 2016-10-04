@@ -25908,6 +25908,7 @@
 
 	// Include React
 	var React = __webpack_require__(2);
+	var LineChart = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-chartjs\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())).Line;
 
 	var Graph = React.createClass({
 	  displayName: "Graph",
@@ -25915,32 +25916,23 @@
 
 	  render: function render() {
 
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "col-lg-12" },
-	        React.createElement(
-	          "div",
-	          { className: "panel panel-danger" },
-	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
-	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Graph"
-	            )
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "panel-body" },
-	            "Panel content"
-	          )
-	        )
-	      )
-	    );
+	    return React.createElement(LineChart, { data: chartData, options: chartOptions });
+	    // return(
+	    //   <div className="container">
+	    //
+	    //     <div className="col-lg-12">
+	    //       <div className="panel panel-danger">
+	    //         <div className="panel-heading">
+	    //           <h3 className="panel-title">Graph</h3>
+	    //         </div>
+	    //         <div className="panel-body">
+	    //           Panel content
+	    //         </div>
+	    //       </div>
+	    //     </div>
+	    //
+	    //   </div>
+	    // )
 	  }
 	});
 

@@ -5,9 +5,9 @@
   "main": "public/index.html",
   "repository": "",
   "scripts": {
-    "start": "node ./app/app.js",
-    "prod": "NODE_ENV=production node server.js",
-    "postinstall": "webpack -p"
+    "start": "node server",
+    "build": "webpack",
+    "dev": "webpack -w & node server"
   },
   "author": "Amanda Hoffman",
   "license": "ISC",
