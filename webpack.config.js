@@ -1,27 +1,23 @@
 module.exports = {
-  
-  // This code will be compiled 
-  entry: "./app/App.js",
-
-  // Then output into this file
+  entry: [
+    './app/app.js'
+  ],
   output: {
-    filename: "public/bundle.js"
+    path: __dirname,
+    publicPath: '/',
+    filename: 'bundle.js'
   },
-
-
-  // This will be what we do
   module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
-        query: {
-          // These are the specific transformations we'll be using. 
-          presets: ['react', 'es2015']
-        }
+    loaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['es2015', 'react']
       }
-    ]
+    }]
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   }
-
-}
+};
