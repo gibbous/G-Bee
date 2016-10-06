@@ -12,34 +12,34 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 ## Design Layout:
 
 **Splash Page:**
-![G-Bee splash page.png](/screeshots/splash page.png)
+![G-Bee splash page.png](/screenshots/splash page.png)
 
 
 **After Sign In:**
 
-![G-Bee afterSignIn.png](../master/screeshots/afterSignIn.png)
+![G-Bee afterSignIn.png](/screenshots/afterSignIn.png)
 
 **Features:**
 
 **Logs**
 
-![G-Bee log.png](../blob/master/screeshots/log.png)
+![G-Bee log.png](../blob/master/screenshots/log.png)
 
 **Timer**
 
-![G-Bee timer.png](../blob/master/screeshots/timer.png)
+![G-Bee timer.png](../blob/master/screenshots/timer.png)
 
 **Graphs**
 
-![G-Bee graphs.png](../blob/master/screeshots/graphs.png)
+![G-Bee graphs.png](../blob/master/screenshots/graphs.png)
 
 **Badges**
 
-![G-Bee badges.png](../blob/master/screeshots/badges.png)
+![G-Bee badges.png](../blob/master/screenshots/badges.png)
 
 **Resources**
 
-![G-Bee resources.png](../blob/master/screeshots/resources.png)
+![G-Bee resources.png](../blob/master/screenshots/resources.png)
 
 **Social**
 
