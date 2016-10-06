@@ -17,7 +17,7 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 
 **After Sign In:**
 
-![G-Bee afterSignIn.png](../blob/master/screeshots/afterSignIn.png)
+![G-Bee afterSignIn.png](../master/screeshots/afterSignIn.png)
 
 **Features:**
 
