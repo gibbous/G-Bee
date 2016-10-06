@@ -12,7 +12,7 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 ## Design Layout:
 
 **Splash Page:**
-![G-Bee splash page.png](splash page.png)
+![G-Bee splash page.png](./screeshots/splash page.png)
 
 
 **After Sign In:**
