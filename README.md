@@ -6,13 +6,13 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 
 [Minutes from Original Planning](../blob/master/Final Project - GBee.doc)
 
-[Original Artboard](../blob/master/gbee.pdf)
+[Original Artboard](../blob/master/screenshots/gbee.pdf)
 
 
 ## Design Layout:
 
 **Splash Page:**
-![G-Bee splash page.png](splash page.png)
+![G-Bee splash page.png](./screenshots/splash page.png)
 
 
 **After Sign In:**
