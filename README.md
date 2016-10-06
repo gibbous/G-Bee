@@ -39,11 +39,11 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 
 **Resources**
 
-![G-Bee resources.png](/master/screenshots/resources.png)
+![G-Bee resources.png](/screenshots/resources.png)
 
 **Social**
 
-![G-Bee social.png](/master/screenshots/social.png)
+![G-Bee social.png](/screenshots/social.png)
 
 
 ## Roles:
