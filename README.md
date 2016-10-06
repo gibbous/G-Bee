@@ -12,38 +12,38 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 ## Design Layout:
 
 **Splash Page:**
-![G-Bee splash page.png](./screeshots/splash page.png)
+![G-Bee splash page.png](../blob/master/screeshots/splash page.png)
 
 
 **After Sign In:**
 
-![G-Bee afterSignIn.png](afterSignIn.png)
+![G-Bee afterSignIn.png](../blob/master/screeshots/afterSignIn.png)
 
 **Features:**
 
 **Logs**
 
-![G-Bee log.png](log.png)
+![G-Bee log.png](../blob/master/screeshots/log.png)
 
 **Timer**
 
-![G-Bee timer.png](timer.png)
+![G-Bee timer.png](../blob/master/screeshots/timer.png)
 
 **Graphs**
 
-![G-Bee graphs.png](graphs.png)
+![G-Bee graphs.png](../blob/master/screeshots/graphs.png)
 
 **Badges**
 
-![G-Bee badges.png](badges.png)
+![G-Bee badges.png](../blob/master/screeshots/badges.png)
 
 **Resources**
 
-![G-Bee resources.png](resources.png)
+![G-Bee resources.png](../blob/master/screeshots/resources.png)
 
 **Social**
 
-![G-Bee social.png](social.png)
+![G-Bee social.png](../blob/master/screeshots/social.png)
 
 
 ## Roles:
@@ -64,4 +64,4 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 
 https://trello.com/b/SntazucZ/g-bee
 
-![G-Bee trello.png](trello.png)
+![G-Bee trello.png](../blob/master/screeshots/trello.png)
