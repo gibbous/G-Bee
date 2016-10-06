@@ -23,27 +23,27 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 
 **Logs**
 
-![G-Bee log.png](../blob/master/screenshots/log.png)
+![G-Bee log.png](/screenshots/log.png)
 
 **Timer**
 
-![G-Bee timer.png](../blob/master/screenshots/timer.png)
+![G-Bee timer.png](/screenshots/timer.png)
 
 **Graphs**
 
-![G-Bee graphs.png](../blob/master/screenshots/graphs.png)
+![G-Bee graphs.png](/screenshots/graphs.png)
 
 **Badges**
 
-![G-Bee badges.png](../blob/master/screenshots/badges.png)
+![G-Bee badges.png](/screenshots/badges.png)
 
 **Resources**
 
-![G-Bee resources.png](../blob/master/screenshots/resources.png)
+![G-Bee resources.png](/master/screenshots/resources.png)
 
 **Social**
 
-![G-Bee social.png](../tree/master/screenshots/social.png)
+![G-Bee social.png](/master/screenshots/social.png)
 
 
 ## Roles:
