@@ -1,3 +1,6 @@
+
+/* To drop database geeB_db , uncomment this line */
+
 CREATE DATABASE geeB_db;
 
 SHOW DATABASES LIKE 'geeB_db';
@@ -28,5 +31,10 @@ CREATE TABLE user_tbl
 );
 
 SHOW DATABASES LIKE 'geeB_db';
+SHOW TABLES;
+
 SHOW COLUMNS from bglog_tbl;
 SELECT * from bglog_tbl;
+
+SHOW COLUMNS from user_tbl;
+SELECT * from user_tbl;
