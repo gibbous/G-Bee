@@ -37,9 +37,14 @@ var Main = React.createClass({
 
       {/*Footer goes here*/}
       <footer>
-            <hr />
-            <p className="pull-right"><i className="fa fa-github" aria-hidden="true"></i> Proudly built using React.js</p>
-          </footer>
+        <div id="footer">
+        <p class="text-muted">&copy;2016 GeeBee Project Group &nbsp;&nbsp;
+        <a href="https://github.com/gibbous/G-Bee" class="invertocat">
+        <img alt="The GitHub Logo" src="github.png" width="24" height="24">
+    </a>
+    </p>
+  </div>
+      </footer>
       </div>
 
     )
