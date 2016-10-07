@@ -9,9 +9,9 @@ var Main = React.createClass({
     return(
 
       <div className="container">
-        <div className="jumbotron">
+        <div className="row">
           <h2><strong>G-Bee</strong></h2>
-          <p><em>subheading</em></p>
+          <p><em>test</em></p>
           <hr/>
           <p>
             <a href="#/Child1"><button className="btn btn-primary btn-lg">Show Child #1</button></a>
