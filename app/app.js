@@ -3,7 +3,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 // Grab the proeprty associated with the Router
-var Router = require('react-router').Router
+var Router = require('react-router').Router;
+var hashHistory = require('react-router').hashHistory;
 
 // Grabs the Routes
 var routes = require('./config/routes');
@@ -13,6 +14,6 @@ var routes = require('./config/routes');
 // Note how ReactDOM takes in two parameters (the contents and the location)
 ReactDOM.render(
 
-  <Router>{routes}</Router>,
+  <Router history={hashHistory}>{routes}</Router>,
   document.getElementById('app')
 )

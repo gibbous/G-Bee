@@ -59,6 +59,7 @@
 
 	// Grab the proeprty associated with the Router
 	var Router = __webpack_require__(160).Router;
+	var hashHistory = __webpack_require__(160).hashHistory;
 
 	// Grabs the Routes
 	var routes = __webpack_require__(223);
@@ -68,7 +69,7 @@
 	// Note how ReactDOM takes in two parameters (the contents and the location)
 	ReactDOM.render(React.createElement(
 	  Router,
-	  null,
+	  { history: hashHistory },
 	  routes
 	), document.getElementById('app'));
 
@@ -25436,37 +25437,27 @@
 
 	// Reference the high-level components
 	var Main = __webpack_require__(224);
-	var Child1 = __webpack_require__(225);
-	var Child2 = __webpack_require__(226);
-	var GrandChild1 = __webpack_require__(227);
-	var GrandChild2 = __webpack_require__(228);
 
-	var Log = __webpack_require__(229);
-	var Timer = __webpack_require__(230);
-	var Graph = __webpack_require__(231);
-	var Badges = __webpack_require__(242);
-	var Resources = __webpack_require__(243);
-	var Social = __webpack_require__(244);
+	var Home = __webpack_require__(241);
+	var Log = __webpack_require__(225);
+	var Timer = __webpack_require__(226);
+	var Graph = __webpack_require__(227);
+	var Badges = __webpack_require__(238);
+	var Resources = __webpack_require__(239);
+	var Social = __webpack_require__(240);
 
 	// Export the Routes
 	module.exports = React.createElement(
 	    Route,
 	    { path: '/', component: Main },
-	    React.createElement(
-	        Route,
-	        { path: 'Child1', component: Child1 },
-	        React.createElement(Route, { path: 'GrandChild1', component: GrandChild1 }),
-	        React.createElement(Route, { path: 'GrandChild2', component: GrandChild2 }),
-	        React.createElement(IndexRoute, { component: GrandChild1 })
-	    ),
-	    React.createElement(Route, { path: 'Child2', component: Child2 }),
+	    React.createElement(Route, { path: 'Home', component: Home }),
 	    React.createElement(Route, { path: 'Log', component: Log }),
 	    React.createElement(Route, { path: 'Timer', component: Timer }),
 	    React.createElement(Route, { path: 'Graph', component: Graph }),
 	    React.createElement(Route, { path: 'Badges', component: Badges }),
 	    React.createElement(Route, { path: 'Resources', component: Resources }),
 	    React.createElement(Route, { path: 'Social', component: Social }),
-	    React.createElement(IndexRoute, { component: Child1 })
+	    React.createElement(IndexRoute, { component: Home })
 	);
 
 /***/ },
@@ -25505,108 +25496,71 @@
 	          React.createElement(
 	            "em",
 	            null,
-	            "test"
+	            "Blood Glucose tracking app"
 	          )
 	        ),
 	        React.createElement("hr", null),
 	        React.createElement(
-	          "p",
-	          null,
+	          "a",
+	          { href: "#/Home" },
 	          React.createElement(
-	            "a",
-	            { href: "#/Child1" },
-	            React.createElement(
-	              "button",
-	              { className: "btn btn-primary btn-lg" },
-	              "Show Child #1"
-	            )
-	          ),
-	          React.createElement(
-	            "a",
-	            { href: "#/Child2" },
-	            React.createElement(
-	              "button",
-	              { className: "btn btn-danger btn-lg" },
-	              "Show Child #2"
-	            )
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Home"
 	          )
 	        ),
 	        React.createElement(
-	          "p",
-	          null,
+	          "a",
+	          { href: "#/Log" },
 	          React.createElement(
-	            "a",
-	            { href: "#/Log" },
-	            React.createElement(
-	              "button",
-	              { className: "btn btn-danger btn-lg" },
-	              "Log"
-	            )
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Log"
 	          )
 	        ),
 	        React.createElement(
-	          "p",
-	          null,
+	          "a",
+	          { href: "#/Timer" },
 	          React.createElement(
-	            "a",
-	            { href: "#/Timer" },
-	            React.createElement(
-	              "button",
-	              { className: "btn btn-danger btn-lg" },
-	              "Timer"
-	            )
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Timer"
 	          )
 	        ),
 	        React.createElement(
-	          "p",
-	          null,
+	          "a",
+	          { href: "#/Graph" },
 	          React.createElement(
-	            "a",
-	            { href: "#/Graph" },
-	            React.createElement(
-	              "button",
-	              { className: "btn btn-danger btn-lg" },
-	              "Graph"
-	            )
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Graph"
 	          )
 	        ),
 	        React.createElement(
-	          "p",
-	          null,
+	          "a",
+	          { href: "#/Badges" },
 	          React.createElement(
-	            "a",
-	            { href: "#/Badges" },
-	            React.createElement(
-	              "button",
-	              { className: "btn btn-danger btn-lg" },
-	              "Badges"
-	            )
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Badges"
 	          )
 	        ),
 	        React.createElement(
-	          "p",
-	          null,
+	          "a",
+	          { href: "#/Resources" },
 	          React.createElement(
-	            "a",
-	            { href: "#/Resources" },
-	            React.createElement(
-	              "button",
-	              { className: "btn btn-danger btn-lg" },
-	              "Resources"
-	            )
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Resources"
 	          )
 	        ),
 	        React.createElement(
-	          "p",
-	          null,
+	          "a",
+	          { href: "#/Social" },
 	          React.createElement(
-	            "a",
-	            { href: "#/Social" },
-	            React.createElement(
-	              "button",
-	              { className: "btn btn-danger btn-lg" },
-	              "Social"
-	            )
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Social"
 	          )
 	        )
 	      ),
@@ -25614,204 +25568,27 @@
 	        "div",
 	        { className: "row" },
 	        this.props.children
+	      ),
+	      React.createElement(
+	        "footer",
+	        null,
+	        React.createElement("hr", null),
+	        React.createElement(
+	          "p",
+	          { className: "pull-right" },
+	          React.createElement("i", { className: "fa fa-github", "aria-hidden": "true" }),
+	          " Proudly built using React.js"
+	        )
 	      )
 	    );
 	  }
 	});
 
-	// Export the componen back for use in other files
+	// Export the component back for use in other files
 	module.exports = Main;
 
 /***/ },
 /* 225 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	// Include React
-	var React = __webpack_require__(2);
-
-	var Child1 = React.createClass({
-	  displayName: "Child1",
-
-
-	  render: function render() {
-
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "col-lg-12" },
-	        React.createElement(
-	          "div",
-	          { className: "panel panel-primary" },
-	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
-	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Child #1"
-	            )
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "panel-body" },
-	            React.createElement(
-	              "p",
-	              null,
-	              React.createElement(
-	                "a",
-	                { href: "#/Child1/GrandChild1" },
-	                React.createElement(
-	                  "button",
-	                  { className: "btn btn-warning btn-sm" },
-	                  "Show Grandchild #1>"
-	                )
-	              ),
-	              React.createElement(
-	                "a",
-	                { href: "#/Child1/GrandChild2" },
-	                React.createElement(
-	                  "button",
-	                  { className: "btn btn-success btn-sm" },
-	                  "Show Grandchild #2>"
-	                )
-	              )
-	            ),
-	            this.props.children
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-	module.exports = Child1;
-
-/***/ },
-/* 226 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	// Include React
-	var React = __webpack_require__(2);
-
-	var Child2 = React.createClass({
-	  displayName: "Child2",
-
-
-	  render: function render() {
-
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "col-lg-12" },
-	        React.createElement(
-	          "div",
-	          { className: "panel panel-danger" },
-	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
-	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Child #2"
-	            )
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "panel-body" },
-	            "Panel content"
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-	module.exports = Child2;
-
-/***/ },
-/* 227 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	// Include React
-	var React = __webpack_require__(2);
-
-	var GrandChild1 = React.createClass({
-	  displayName: "GrandChild1",
-
-
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      { className: "panel panel-warning" },
-	      React.createElement(
-	        "div",
-	        { className: "panel-heading" },
-	        React.createElement(
-	          "h3",
-	          { className: "panel-title" },
-	          "Grandchild #1"
-	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "panel-body" },
-	        "Panel content"
-	      )
-	    );
-	  }
-	});
-
-	module.exports = GrandChild1;
-
-/***/ },
-/* 228 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	// Include React
-	var React = __webpack_require__(2);
-
-	var GrandChild2 = React.createClass({
-	  displayName: "GrandChild2",
-
-
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      { className: "panel panel-warning" },
-	      React.createElement(
-	        "div",
-	        { className: "panel-heading" },
-	        React.createElement(
-	          "h3",
-	          { className: "panel-title" },
-	          "Grandchild #2"
-	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "panel-body" },
-	        "Panel content"
-	      )
-	    );
-	  }
-	});
-
-	module.exports = GrandChild2;
-
-/***/ },
-/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25857,7 +25634,7 @@
 	module.exports = Log;
 
 /***/ },
-/* 230 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25903,14 +25680,14 @@
 	module.exports = Timer;
 
 /***/ },
-/* 231 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	// Include React
 	var React = __webpack_require__(2);
-	var LineChart = __webpack_require__(232).Line;
+	var LineChart = __webpack_require__(228).Line;
 
 	var Graph = React.createClass({
 	  displayName: "Graph",
@@ -25941,31 +25718,31 @@
 	module.exports = Graph;
 
 /***/ },
-/* 232 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = {
-	  Bar: __webpack_require__(233),
-	  Doughnut: __webpack_require__(237),
-	  Line: __webpack_require__(238),
-	  Pie: __webpack_require__(239),
-	  PolarArea: __webpack_require__(240),
-	  Radar: __webpack_require__(241),
-	  createClass: __webpack_require__(234).createClass
+	  Bar: __webpack_require__(229),
+	  Doughnut: __webpack_require__(233),
+	  Line: __webpack_require__(234),
+	  Pie: __webpack_require__(235),
+	  PolarArea: __webpack_require__(236),
+	  Radar: __webpack_require__(237),
+	  createClass: __webpack_require__(230).createClass
 	};
 
 
 /***/ },
-/* 233 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(234);
+	var vars = __webpack_require__(230);
 
 	module.exports = vars.createClass('Bar', ['getBarsAtEvent']);
 
 
 /***/ },
-/* 234 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(2);
@@ -26028,7 +25805,7 @@
 	    };
 
 	    classData.initializeChart = function(nextProps) {
-	      var Chart = __webpack_require__(235);
+	      var Chart = __webpack_require__(231);
 	      var el = ReactDOM.findDOMNode(this);
 	      var ctx = el.getContext("2d");
 	      var chart = new Chart(ctx)[chartType](nextProps.data, nextProps.options || {});
@@ -26119,7 +25896,7 @@
 
 
 /***/ },
-/* 235 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -26433,7 +26210,7 @@
 				//Method for warning of errors
 				if (window.console && typeof window.console.warn === "function") console.warn(str);
 			},
-			amd = helpers.amd = ("function" === 'function' && __webpack_require__(236)),
+			amd = helpers.amd = ("function" === 'function' && __webpack_require__(232)),
 			//-- Math methods
 			isNumber = helpers.isNumber = function(n){
 				return !isNaN(parseFloat(n)) && isFinite(n);
@@ -29861,7 +29638,7 @@
 
 
 /***/ },
-/* 236 */
+/* 232 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -29869,52 +29646,52 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 237 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(234);
+	var vars = __webpack_require__(230);
 
 	module.exports = vars.createClass('Doughnut', ['getSegmentsAtEvent']);
 
 
 /***/ },
-/* 238 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(234);
+	var vars = __webpack_require__(230);
 
 	module.exports = vars.createClass('Line', ['getPointsAtEvent']);
 
 
 /***/ },
-/* 239 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(234);
+	var vars = __webpack_require__(230);
 
 	module.exports = vars.createClass('Pie', ['getSegmentsAtEvent']);
 
 
 /***/ },
-/* 240 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(234);
+	var vars = __webpack_require__(230);
 
 	module.exports = vars.createClass('PolarArea', ['getSegmentsAtEvent']);
 
 
 /***/ },
-/* 241 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(234);
+	var vars = __webpack_require__(230);
 
 	module.exports = vars.createClass('Radar', ['getPointsAtEvent']);
 
 
 /***/ },
-/* 242 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29960,7 +29737,7 @@
 	module.exports = Badges;
 
 /***/ },
-/* 243 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30006,7 +29783,7 @@
 	module.exports = Resources;
 
 /***/ },
-/* 244 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30050,6 +29827,52 @@
 	});
 
 	module.exports = Social;
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	// Include React
+	var React = __webpack_require__(2);
+
+	var Home = React.createClass({
+	  displayName: "Home",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-lg-12" },
+	        React.createElement(
+	          "div",
+	          { className: "panel panel-danger" },
+	          React.createElement(
+	            "div",
+	            { className: "panel-heading" },
+	            React.createElement(
+	              "h3",
+	              { className: "panel-title" },
+	              "Home"
+	            )
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "panel-body" },
+	            "Panel content"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Home;
 
 /***/ }
 /******/ ]);
