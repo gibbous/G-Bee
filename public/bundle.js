@@ -25508,6 +25508,24 @@
 	                                        React.createElement("hr", null),
 	                                        React.createElement(
 	                                                  "a",
+	                                                  { href: "#/Login" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Login"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Signup" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Signup"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
 	                                                  { href: "#/Home" },
 	                                                  React.createElement(
 	                                                            "button",
@@ -25567,24 +25585,6 @@
 	                                                            "button",
 	                                                            { className: "btn btn-danger btn-lg" },
 	                                                            "Social"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Login" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
-	                                                            "Login"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Signup" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
-	                                                            "Signup"
 	                                                  )
 	                                        )
 	                              ),

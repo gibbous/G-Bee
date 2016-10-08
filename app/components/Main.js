@@ -13,6 +13,9 @@ var Main = React.createClass({
           <h2><strong>G-Bee</strong></h2>
           <p><em>Blood Glucose tracking app</em></p>
           <hr/>
+          <a href="#/Login"><button className="btn btn-danger btn-lg">Login</button></a>
+
+          <a href="#/Signup"><button className="btn btn-danger btn-lg">Signup</button></a>
           <a href="#/Home"><button className="btn btn-danger btn-lg">Home</button></a>
           <a href="#/Log"><button className="btn btn-danger btn-lg">Log</button></a>
 
@@ -26,9 +29,7 @@ var Main = React.createClass({
 
           <a href="#/Social"><button className="btn btn-danger btn-lg">Social</button></a>
 
-          <a href="#/Login"><button className="btn btn-danger btn-lg">Login</button></a>
 
-          <a href="#/Signup"><button className="btn btn-danger btn-lg">Signup</button></a>
             
         </div>
 
