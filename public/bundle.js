@@ -25445,19 +25445,25 @@
 	var Badges = __webpack_require__(239);
 	var Resources = __webpack_require__(240);
 	var Social = __webpack_require__(241);
+	var Login = __webpack_require__(242);
+	var Signup = __webpack_require__(243);
+	var Profile = __webpack_require__(244);
 
 	// Export the Routes
 	module.exports = React.createElement(
-	    Route,
-	    { path: '/', component: Main },
-	    React.createElement(Route, { path: 'Home', component: Home }),
-	    React.createElement(Route, { path: 'Log', component: Log }),
-	    React.createElement(Route, { path: 'Timer', component: Timer }),
-	    React.createElement(Route, { path: 'Graph', component: Graph }),
-	    React.createElement(Route, { path: 'Badges', component: Badges }),
-	    React.createElement(Route, { path: 'Resources', component: Resources }),
-	    React.createElement(Route, { path: 'Social', component: Social }),
-	    React.createElement(IndexRoute, { component: Home })
+	  Route,
+	  { path: '/', component: Main },
+	  React.createElement(Route, { path: 'Home', component: Home }),
+	  React.createElement(Route, { path: 'Log', component: Log }),
+	  React.createElement(Route, { path: 'Timer', component: Timer }),
+	  React.createElement(Route, { path: 'Graph', component: Graph }),
+	  React.createElement(Route, { path: 'Badges', component: Badges }),
+	  React.createElement(Route, { path: 'Resources', component: Resources }),
+	  React.createElement(Route, { path: 'Social', component: Social }),
+	  React.createElement(Route, { path: 'Login', component: Login }),
+	  React.createElement(Route, { path: 'Signup', component: Signup }),
+	  React.createElement(Route, { path: 'Profile', component: Profile }),
+	  React.createElement(IndexRoute, { component: Home })
 	);
 
 /***/ },
@@ -25466,129 +25472,147 @@
 
 	"use strict";
 
-	// Include React 
+	// Include React
 	var React = __webpack_require__(2);
 
 	var Main = React.createClass({
-	  displayName: "Main",
+	          displayName: "Main",
 
-	  // Here we render the function
-	  render: function render() {
+	          // Here we render the function
+	          render: function render() {
 
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "row" },
-	        React.createElement(
-	          "h2",
-	          null,
-	          React.createElement(
-	            "strong",
-	            null,
-	            "G-Bee"
-	          )
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          React.createElement(
-	            "em",
-	            null,
-	            "Blood Glucose tracking app"
-	          )
-	        ),
-	        React.createElement("hr", null),
-	        React.createElement(
-	          "a",
-	          { href: "#/Home" },
-	          React.createElement(
-	            "button",
-	            { className: "btn btn-danger btn-lg" },
-	            "Home"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Log" },
-	          React.createElement(
-	            "button",
-	            { className: "btn btn-danger btn-lg" },
-	            "Log"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Timer" },
-	          React.createElement(
-	            "button",
-	            { className: "btn btn-danger btn-lg" },
-	            "Timer"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Graph" },
-	          React.createElement(
-	            "button",
-	            { className: "btn btn-danger btn-lg" },
-	            "Graph"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Badges" },
-	          React.createElement(
-	            "button",
-	            { className: "btn btn-danger btn-lg" },
-	            "Badges"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Resources" },
-	          React.createElement(
-	            "button",
-	            { className: "btn btn-danger btn-lg" },
-	            "Resources"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Social" },
-	          React.createElement(
-	            "button",
-	            { className: "btn btn-danger btn-lg" },
-	            "Social"
-	          )
-	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "row" },
-	        this.props.children
-	      ),
-	      React.createElement(
-	        "footer",
-	        null,
-	        React.createElement(
-	          "div",
-	          { id: "footer" },
-	          React.createElement(
-	            "p",
-	            { className: "text-muted" },
-	            "\xA92016 GeeBee Project Group \xA0\xA0",
-	            React.createElement(
-	              "a",
-	              { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
-	              React.createElement("img", { alt: "The GitHub Logo", src: "../assets/images/github.png", width: "24", height: "24" })
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
+	                    return React.createElement(
+	                              "div",
+	                              { className: "container" },
+	                              React.createElement(
+	                                        "div",
+	                                        { className: "row" },
+	                                        React.createElement(
+	                                                  "h2",
+	                                                  null,
+	                                                  React.createElement(
+	                                                            "strong",
+	                                                            null,
+	                                                            "G-Bee"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "p",
+	                                                  null,
+	                                                  React.createElement(
+	                                                            "em",
+	                                                            null,
+	                                                            "Blood Glucose tracking app"
+	                                                  )
+	                                        ),
+	                                        React.createElement("hr", null),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Home" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Home"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Log" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Log"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Timer" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Timer"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Graph" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Graph"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Badges" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Badges"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Resources" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Resources"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Social" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Social"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Login" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Login"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Signup" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            "Signup"
+	                                                  )
+	                                        )
+	                              ),
+	                              React.createElement(
+	                                        "div",
+	                                        { className: "row" },
+	                                        this.props.children
+	                              ),
+	                              React.createElement(
+	                                        "footer",
+	                                        null,
+	                                        React.createElement(
+	                                                  "div",
+	                                                  { id: "footer" },
+	                                                  React.createElement(
+	                                                            "p",
+	                                                            { className: "text-muted" },
+	                                                            "\xA92016 GeeBee Project Group \xA0\xA0",
+	                                                            React.createElement(
+	                                                                      "a",
+	                                                                      { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
+	                                                                      React.createElement("img", { alt: "The GitHub Logo", src: "../assets/images/github.png", width: "24", height: "24" })
+	                                                            )
+	                                                  )
+	                                        )
+	                              )
+	                    );
+	          }
 	});
 
 	// Export the component back for use in other files
@@ -29889,6 +29913,215 @@
 	});
 
 	module.exports = Social;
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Login = React.createClass({
+	  displayName: "Login",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-sm-6 col-sm-offset-3" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          " Login"
+	        ),
+	        React.createElement(
+	          "form",
+	          { action: "/login", method: "post" },
+	          React.createElement(
+	            "div",
+	            { className: "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Email"
+	            ),
+	            React.createElement("input", { type: "text", "class": "form-control", name: "email" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { "class": "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Password"
+	            ),
+	            React.createElement("input", { type: "password", "class": "form-control", name: "password" })
+	          ),
+	          React.createElement(
+	            "button",
+	            { type: "submit", "class": "btn btn-warning btn-lg" },
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Need an account? ",
+	          React.createElement(
+	            "a",
+	            { href: "/signup" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Or go ",
+	          React.createElement(
+	            "a",
+	            { href: "/" },
+	            "Home"
+	          ),
+	          "."
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Login;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Signup = React.createClass({
+	  displayName: "Signup",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-sm-6 col-sm-offset-3" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          " Signup"
+	        ),
+	        React.createElement(
+	          "form",
+	          { action: "/signup", method: "post" },
+	          React.createElement(
+	            "div",
+	            { className: "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Email"
+	            ),
+	            React.createElement("input", { type: "text", "class": "form-control", name: "email" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { "class": "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Password"
+	            ),
+	            React.createElement("input", { type: "password", "class": "form-control", name: "password" })
+	          ),
+	          React.createElement(
+	            "button",
+	            { type: "submit", "class": "btn btn-warning btn-lg" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Already have an account? ",
+	          React.createElement(
+	            "a",
+	            { href: "/login" },
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Or go ",
+	          React.createElement(
+	            "a",
+	            { href: "/" },
+	            "Home"
+	          ),
+	          "."
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Signup;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Profile = React.createClass({
+	  displayName: "Profile",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "page-header text-center" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          "Profile Page"
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "/logout", className: "btn btn-default btn-sm" },
+	          "Logout"
+	        )
+	      ),
+	      React.createElement(
+	        "div",
+	        { className: "row" },
+	        "//Local Information"
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Profile;
 
 /***/ }
 /******/ ]);

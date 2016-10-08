@@ -1,4 +1,4 @@
-// Include React 
+// Include React
 var React = require('react');
 
 var Main = React.createClass({
@@ -13,23 +13,27 @@ var Main = React.createClass({
           <h2><strong>G-Bee</strong></h2>
           <p><em>Blood Glucose tracking app</em></p>
           <hr/>
-         <a href="#/Home"><button className="btn btn-danger btn-lg">Home</button></a>
+          <a href="#/Home"><button className="btn btn-danger btn-lg">Home</button></a>
           <a href="#/Log"><button className="btn btn-danger btn-lg">Log</button></a>
-          
+
           <a href="#/Timer"><button className="btn btn-danger btn-lg">Timer</button></a>
-          
+
           <a href="#/Graph"><button className="btn btn-danger btn-lg">Graph</button></a>
-          
+
           <a href="#/Badges"><button className="btn btn-danger btn-lg">Badges</button></a>
-          
+
           <a href="#/Resources"><button className="btn btn-danger btn-lg">Resources</button></a>
-          
+
           <a href="#/Social"><button className="btn btn-danger btn-lg">Social</button></a>
-          
+
+          <a href="#/Login"><button className="btn btn-danger btn-lg">Login</button></a>
+
+          <a href="#/Signup"><button className="btn btn-danger btn-lg">Signup</button></a>
+            
         </div>
 
         <div className="row">
-          
+
           {/*This code will dump the correct Child Component*/}
           {this.props.children}
 

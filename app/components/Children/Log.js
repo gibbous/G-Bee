@@ -13,6 +13,8 @@ var Log = React.createClass({
             <div className="panel-heading">
               <h3 className="panel-title">Log</h3>
             </div>
+
+
               <div className="panel-body">
                 Form Goes Here
 
@@ -41,7 +43,3 @@ var Log = React.createClass({
               });
 
 module.exports = Log;
-
-
-
-
