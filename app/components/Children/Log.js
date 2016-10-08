@@ -14,7 +14,6 @@ var Log = React.createClass({
               <h3 className="panel-title">Log</h3>
             </div>
 
-
               <div className="panel-body">
                 Form Goes Here
 
