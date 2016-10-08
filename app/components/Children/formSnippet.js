@@ -1,21 +1,5 @@
-// Include React
-var React = require('react');
 
-var Log = React.createClass({
-
-  render: function(){
-
-    return(
-      <div className="container">
-
-        <div className="col-lg-12">
-          <div className="panel panel-danger">
-            <div className="panel-heading">
-              <h3 className="panel-title">Log</h3>
-            </div>
-
-            <div className="panel-body">
-              {/* function FieldGroup({ id, label, help, ...props }) {
+              function FieldGroup({ id, label, help, ...props }) {
                 return (
                   <FormGroup controlId={id}>
                     <ControlLabel>{label}</ControlLabel>
@@ -23,7 +7,7 @@ var Log = React.createClass({
                     {help && <HelpBlock>{help}</HelpBlock>}
                   </FormGroup>
                 );
-              } */}
+              }
 
               const formInstance = (
                 <form>
@@ -47,7 +31,7 @@ var Log = React.createClass({
                     label="Blood Glucose Reading"
                     placeholder=""
                   />
-
+              
                   <FormGroup controlId="formControlsTestOptions">
                     <ControlLabel>Test Options</ControlLabel>
                     <FormControl componentClass="select" placeholder="Choose Test Option">
@@ -70,39 +54,3 @@ var Log = React.createClass({
               );
 
               ReactDOM.render(formInstance, mountNode);
-
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-              <div className="panel-body">
-                Form Goes Here
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-
->>>>>>> master
-                  )
-                }
-              });
-
-module.exports = Log;

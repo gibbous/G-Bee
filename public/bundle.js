@@ -25445,9 +25445,12 @@
 	var Badges = __webpack_require__(239);
 	var Resources = __webpack_require__(240);
 	var Social = __webpack_require__(241);
+<<<<<<< HEAD
 	var Login = __webpack_require__(242);
 	var Signup = __webpack_require__(243);
 	var Profile = __webpack_require__(244);
+=======
+>>>>>>> master
 
 	// Export the Routes
 	module.exports = React.createElement(
@@ -25701,6 +25704,7 @@
 	          React.createElement(
 	            "div",
 	            { className: "panel-body" },
+<<<<<<< HEAD
 	            "const formInstance = (",
 	            React.createElement(
 	              "form",
@@ -25773,6 +25777,9 @@
 	              )
 	            ),
 	            "); ReactDOM.render(formInstance, mountNode);"
+=======
+	            "Form Goes Here"
+>>>>>>> master
 	          )
 	        )
 	      )
@@ -25839,29 +25846,38 @@
 	var LineChart = __webpack_require__(229).Line;
 
 	var Graph = React.createClass({
-	  displayName: "Graph",
+	   displayName: "Graph",
 
 
-	  render: function render() {
+	   render: function render() {
 
-	    return React.createElement(LineChart, { data: chartData, options: chartOptions });
-	    // return(
-	    //   <div className="container">
-	    //
-	    //     <div className="col-lg-12">
-	    //       <div className="panel panel-danger">
-	    //         <div className="panel-heading">
-	    //           <h3 className="panel-title">Graph</h3>
-	    //         </div>
-	    //         <div className="panel-body">
-	    //           Panel content
-	    //         </div>
-	    //       </div>
-	    //     </div>
-	    //
-	    //   </div>
-	    // )
-	  }
+	      return React.createElement(
+	         "div",
+	         { className: "container" },
+	         React.createElement(
+	            "div",
+	            { className: "col-lg-12" },
+	            React.createElement(
+	               "div",
+	               { className: "panel panel-danger" },
+	               React.createElement(
+	                  "div",
+	                  { className: "panel-heading" },
+	                  React.createElement(
+	                     "h3",
+	                     { className: "panel-title" },
+	                     "Graph"
+	                  )
+	               ),
+	               React.createElement(
+	                  "div",
+	                  { className: "panel-body" },
+	                  "Chart goes here"
+	               )
+	            )
+	         )
+	      );
+	   }
 	});
 
 	module.exports = Graph;
@@ -29977,6 +29993,7 @@
 
 	module.exports = Social;
 
+<<<<<<< HEAD
 /***/ },
 /* 242 */
 /***/ function(module, exports, __webpack_require__) {
@@ -30186,5 +30203,7 @@
 
 	module.exports = Profile;
 
+=======
+>>>>>>> master
 /***/ }
 /******/ ]);
