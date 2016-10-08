@@ -25445,19 +25445,28 @@
 	var Badges = __webpack_require__(239);
 	var Resources = __webpack_require__(240);
 	var Social = __webpack_require__(241);
+<<<<<<< HEAD
+	var Login = __webpack_require__(242);
+	var Signup = __webpack_require__(243);
+	var Profile = __webpack_require__(244);
+=======
+>>>>>>> master
 
 	// Export the Routes
 	module.exports = React.createElement(
-	    Route,
-	    { path: '/', component: Main },
-	    React.createElement(Route, { path: 'Home', component: Home }),
-	    React.createElement(Route, { path: 'Log', component: Log }),
-	    React.createElement(Route, { path: 'Timer', component: Timer }),
-	    React.createElement(Route, { path: 'Graph', component: Graph }),
-	    React.createElement(Route, { path: 'Badges', component: Badges }),
-	    React.createElement(Route, { path: 'Resources', component: Resources }),
-	    React.createElement(Route, { path: 'Social', component: Social }),
-	    React.createElement(IndexRoute, { component: Home })
+	  Route,
+	  { path: '/', component: Main },
+	  React.createElement(Route, { path: 'Home', component: Home }),
+	  React.createElement(Route, { path: 'Log', component: Log }),
+	  React.createElement(Route, { path: 'Timer', component: Timer }),
+	  React.createElement(Route, { path: 'Graph', component: Graph }),
+	  React.createElement(Route, { path: 'Badges', component: Badges }),
+	  React.createElement(Route, { path: 'Resources', component: Resources }),
+	  React.createElement(Route, { path: 'Social', component: Social }),
+	  React.createElement(Route, { path: 'Login', component: Login }),
+	  React.createElement(Route, { path: 'Signup', component: Signup }),
+	  React.createElement(Route, { path: 'Profile', component: Profile }),
+	  React.createElement(IndexRoute, { component: Home })
 	);
 
 /***/ },
@@ -25466,7 +25475,7 @@
 
 	"use strict";
 
-	// Include React 
+	// Include React
 	var React = __webpack_require__(2);
 
 	var Main = React.createClass({
@@ -25562,7 +25571,26 @@
 	            { className: "btn btn-danger btn-lg" },
 	            "Social"
 	          )
-	        )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Login" },
+	          React.createElement(
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Signup" },
+	          React.createElement(
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement("signup", null)
 	      ),
 	      React.createElement(
 	        "div",
@@ -25676,7 +25704,82 @@
 	          React.createElement(
 	            "div",
 	            { className: "panel-body" },
+<<<<<<< HEAD
+	            "const formInstance = (",
+	            React.createElement(
+	              "form",
+	              null,
+	              React.createElement(FieldGroup, {
+	                id: "formControlsDate",
+	                type: "date",
+	                label: "Date",
+	                placeholder: "Enter Date"
+	              }),
+	              React.createElement(FieldGroup, {
+	                id: "formControlsTime",
+	                type: "time",
+	                label: "Time",
+	                placeholder: "Enter Time"
+	              }),
+	              React.createElement(FieldGroup, {
+	                id: "formControlsReading",
+	                type: "number",
+	                label: "Blood Glucose Reading",
+	                placeholder: ""
+	              }),
+	              React.createElement(
+	                FormGroup,
+	                { controlId: "formControlsTestOptions" },
+	                React.createElement(
+	                  ControlLabel,
+	                  null,
+	                  "Test Options"
+	                ),
+	                React.createElement(
+	                  FormControl,
+	                  { componentClass: "select", placeholder: "Choose Test Option" },
+	                  React.createElement(
+	                    "option",
+	                    { value: "select" },
+	                    "Out of Bed (fasting)"
+	                  ),
+	                  React.createElement(
+	                    "option",
+	                    { value: "other" },
+	                    "After Breakfast"
+	                  ),
+	                  React.createElement(
+	                    "option",
+	                    { value: "other" },
+	                    "After Lunch"
+	                  ),
+	                  React.createElement(
+	                    "option",
+	                    { value: "other" },
+	                    "After Dinner"
+	                  )
+	                )
+	              ),
+	              React.createElement(
+	                FormGroup,
+	                { controlId: "formControlsNotearea" },
+	                React.createElement(
+	                  ControlLabel,
+	                  null,
+	                  "Notes"
+	                ),
+	                React.createElement(FormControl, { componentClass: "textarea", placeholder: "textarea" })
+	              ),
+	              React.createElement(
+	                Button,
+	                { type: "submit" },
+	                "Submit"
+	              )
+	            ),
+	            "); ReactDOM.render(formInstance, mountNode);"
+=======
 	            "Form Goes Here"
+>>>>>>> master
 	          )
 	        )
 	      )
@@ -29890,5 +29993,217 @@
 
 	module.exports = Social;
 
+<<<<<<< HEAD
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Login = React.createClass({
+	  displayName: "Login",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-sm-6 col-sm-offset-3" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          " Login"
+	        ),
+	        React.createElement(
+	          "form",
+	          { action: "/login", method: "post" },
+	          React.createElement(
+	            "div",
+	            { className: "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Email"
+	            ),
+	            React.createElement("input", { type: "text", "class": "form-control", name: "email" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { "class": "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Password"
+	            ),
+	            React.createElement("input", { type: "password", "class": "form-control", name: "password" })
+	          ),
+	          React.createElement(
+	            "button",
+	            { type: "submit", "class": "btn btn-warning btn-lg" },
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Need an account? ",
+	          React.createElement(
+	            "a",
+	            { href: "/signup" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Or go ",
+	          React.createElement(
+	            "a",
+	            { href: "/" },
+	            "Home"
+	          ),
+	          "."
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Login;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Signup = React.createClass({
+	  displayName: "Signup",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-sm-6 col-sm-offset-3" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          " Login"
+	        ),
+	        React.createElement(
+	          "form",
+	          { action: "/signup", method: "post" },
+	          React.createElement(
+	            "div",
+	            { className: "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Email"
+	            ),
+	            React.createElement("input", { type: "text", "class": "form-control", name: "email" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { "class": "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Password"
+	            ),
+	            React.createElement("input", { type: "password", "class": "form-control", name: "password" })
+	          ),
+	          React.createElement(
+	            "button",
+	            { type: "submit", "class": "btn btn-warning btn-lg" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Already have an account? ",
+	          React.createElement(
+	            "a",
+	            { href: "/login" },
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Or go ",
+	          React.createElement(
+	            "a",
+	            { href: "/" },
+	            "Home"
+	          ),
+	          "."
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Signup;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Profile = React.createClass({
+	  displayName: "Profile",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "page-header text-center" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          "Profile Page"
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "/logout", className: "btn btn-default btn-sm" },
+	          "Logout"
+	        )
+	      ),
+	      React.createElement(
+	        "div",
+	        { className: "row" },
+	        "//Local Information"
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Profile;
+
+=======
+>>>>>>> master
 /***/ }
 /******/ ]);
