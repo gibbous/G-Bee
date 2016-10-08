@@ -25582,7 +25582,7 @@
 	            React.createElement(
 	              "a",
 	              { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
-	              React.createElement("img", { alt: "The GitHub Logo", src: "github.png", width: "24", height: "24" })
+	              React.createElement("img", { alt: "The GitHub Logo", src: "../assets/images/github.png", width: "24", height: "24" })
 	            )
 	          )
 	        )

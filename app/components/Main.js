@@ -40,7 +40,7 @@ var Main = React.createClass({
         <div id="footer">
         <p className="text-muted">&copy;2016 GeeBee Project Group &nbsp;&nbsp;
         <a href="https://github.com/gibbous/G-Bee" className="invertocat">
-        <img alt="The GitHub Logo" src="github.png" width="24" height="24"/>
+        <img alt="The GitHub Logo" src="../assets/images/github.png" width="24" height="24"/>
     </a>
     </p>
   </div>
