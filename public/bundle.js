@@ -25438,13 +25438,13 @@
 	// Reference the high-level components
 	var Main = __webpack_require__(224);
 
-	var Home = __webpack_require__(241);
-	var Log = __webpack_require__(225);
-	var Timer = __webpack_require__(226);
-	var Graph = __webpack_require__(227);
-	var Badges = __webpack_require__(238);
-	var Resources = __webpack_require__(239);
-	var Social = __webpack_require__(240);
+	var Home = __webpack_require__(225);
+	var Log = __webpack_require__(226);
+	var Timer = __webpack_require__(227);
+	var Graph = __webpack_require__(228);
+	var Badges = __webpack_require__(239);
+	var Resources = __webpack_require__(240);
+	var Social = __webpack_require__(241);
 
 	// Export the Routes
 	module.exports = React.createElement(
@@ -25572,12 +25572,19 @@
 	      React.createElement(
 	        "footer",
 	        null,
-	        React.createElement("hr", null),
 	        React.createElement(
-	          "p",
-	          { className: "pull-right" },
-	          React.createElement("i", { className: "fa fa-github", "aria-hidden": "true" }),
-	          " Proudly built using React.js"
+	          "div",
+	          { id: "footer" },
+	          React.createElement(
+	            "p",
+	            { className: "text-muted" },
+	            "\xA92016 GeeBee Project Group \xA0\xA0",
+	            React.createElement(
+	              "a",
+	              { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
+	              React.createElement("img", { alt: "The GitHub Logo", src: "github.png", width: "24", height: "24" })
+	            )
+	          )
 	        )
 	      )
 	    );
@@ -25589,6 +25596,52 @@
 
 /***/ },
 /* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	// Include React
+	var React = __webpack_require__(2);
+
+	var Home = React.createClass({
+	  displayName: "Home",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-lg-12" },
+	        React.createElement(
+	          "div",
+	          { className: "panel panel-danger" },
+	          React.createElement(
+	            "div",
+	            { className: "panel-heading" },
+	            React.createElement(
+	              "h3",
+	              { className: "panel-title" },
+	              "Home"
+	            )
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "panel-body" },
+	            "Panel content"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Home;
+
+/***/ },
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25623,7 +25676,7 @@
 	          React.createElement(
 	            "div",
 	            { className: "panel-body" },
-	            "Panel content"
+	            "Form Goes Here"
 	          )
 	        )
 	      )
@@ -25634,7 +25687,7 @@
 	module.exports = Log;
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25680,69 +25733,78 @@
 	module.exports = Timer;
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	// Include React
 	var React = __webpack_require__(2);
-	var LineChart = __webpack_require__(228).Line;
+	var LineChart = __webpack_require__(229).Line;
 
 	var Graph = React.createClass({
-	  displayName: "Graph",
+	   displayName: "Graph",
 
 
-	  render: function render() {
+	   render: function render() {
 
-	    return React.createElement(LineChart, { data: chartData, options: chartOptions });
-	    // return(
-	    //   <div className="container">
-	    //
-	    //     <div className="col-lg-12">
-	    //       <div className="panel panel-danger">
-	    //         <div className="panel-heading">
-	    //           <h3 className="panel-title">Graph</h3>
-	    //         </div>
-	    //         <div className="panel-body">
-	    //           Panel content
-	    //         </div>
-	    //       </div>
-	    //     </div>
-	    //
-	    //   </div>
-	    // )
-	  }
+	      return React.createElement(
+	         "div",
+	         { className: "container" },
+	         React.createElement(
+	            "div",
+	            { className: "col-lg-12" },
+	            React.createElement(
+	               "div",
+	               { className: "panel panel-danger" },
+	               React.createElement(
+	                  "div",
+	                  { className: "panel-heading" },
+	                  React.createElement(
+	                     "h3",
+	                     { className: "panel-title" },
+	                     "Graph"
+	                  )
+	               ),
+	               React.createElement(
+	                  "div",
+	                  { className: "panel-body" },
+	                  "Chart goes here"
+	               )
+	            )
+	         )
+	      );
+	   }
 	});
 
 	module.exports = Graph;
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = {
-	  Bar: __webpack_require__(229),
-	  Doughnut: __webpack_require__(233),
-	  Line: __webpack_require__(234),
-	  Pie: __webpack_require__(235),
-	  PolarArea: __webpack_require__(236),
-	  Radar: __webpack_require__(237),
-	  createClass: __webpack_require__(230).createClass
+	  Bar: __webpack_require__(230),
+	  Doughnut: __webpack_require__(234),
+	  Line: __webpack_require__(235),
+	  Pie: __webpack_require__(236),
+	  PolarArea: __webpack_require__(237),
+	  Radar: __webpack_require__(238),
+	  createClass: __webpack_require__(231).createClass
 	};
 
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
 
 	module.exports = vars.createClass('Bar', ['getBarsAtEvent']);
 
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(2);
@@ -25805,7 +25867,7 @@
 	    };
 
 	    classData.initializeChart = function(nextProps) {
-	      var Chart = __webpack_require__(231);
+	      var Chart = __webpack_require__(232);
 	      var el = ReactDOM.findDOMNode(this);
 	      var ctx = el.getContext("2d");
 	      var chart = new Chart(ctx)[chartType](nextProps.data, nextProps.options || {});
@@ -25896,7 +25958,7 @@
 
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -26210,7 +26272,7 @@
 				//Method for warning of errors
 				if (window.console && typeof window.console.warn === "function") console.warn(str);
 			},
-			amd = helpers.amd = ("function" === 'function' && __webpack_require__(232)),
+			amd = helpers.amd = ("function" === 'function' && __webpack_require__(233)),
 			//-- Math methods
 			isNumber = helpers.isNumber = function(n){
 				return !isNaN(parseFloat(n)) && isFinite(n);
@@ -29638,7 +29700,7 @@
 
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -29646,52 +29708,52 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 233 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var vars = __webpack_require__(230);
-
-	module.exports = vars.createClass('Doughnut', ['getSegmentsAtEvent']);
-
-
-/***/ },
 /* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
 
-	module.exports = vars.createClass('Line', ['getPointsAtEvent']);
+	module.exports = vars.createClass('Doughnut', ['getSegmentsAtEvent']);
 
 
 /***/ },
 /* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
 
-	module.exports = vars.createClass('Pie', ['getSegmentsAtEvent']);
+	module.exports = vars.createClass('Line', ['getPointsAtEvent']);
 
 
 /***/ },
 /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
 
-	module.exports = vars.createClass('PolarArea', ['getSegmentsAtEvent']);
+	module.exports = vars.createClass('Pie', ['getSegmentsAtEvent']);
 
 
 /***/ },
 /* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
+
+	module.exports = vars.createClass('PolarArea', ['getSegmentsAtEvent']);
+
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var vars = __webpack_require__(231);
 
 	module.exports = vars.createClass('Radar', ['getPointsAtEvent']);
 
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29737,7 +29799,7 @@
 	module.exports = Badges;
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29783,7 +29845,7 @@
 	module.exports = Resources;
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29827,52 +29889,6 @@
 	});
 
 	module.exports = Social;
-
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	// Include React
-	var React = __webpack_require__(2);
-
-	var Home = React.createClass({
-	  displayName: "Home",
-
-
-	  render: function render() {
-
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "col-lg-12" },
-	        React.createElement(
-	          "div",
-	          { className: "panel panel-danger" },
-	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
-	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Home"
-	            )
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "panel-body" },
-	            "Panel content"
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-	module.exports = Home;
 
 /***/ }
 /******/ ]);
