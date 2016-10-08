@@ -14,7 +14,7 @@ var Log = React.createClass({
               <h3 className="panel-title">Log</h3>
             </div>
             <div className="panel-body">
-              function FieldGroup({ id, label, help, ...props }) {
+              {/* function FieldGroup({ id, label, help, ...props }) {
                 return (
                   <FormGroup controlId={id}>
                     <ControlLabel>{label}</ControlLabel>
@@ -22,7 +22,7 @@ var Log = React.createClass({
                     {help && <HelpBlock>{help}</HelpBlock>}
                   </FormGroup>
                 );
-              }
+              } */}
 
               const formInstance = (
                 <form>
@@ -46,7 +46,7 @@ var Log = React.createClass({
                     label="Blood Glucose Reading"
                     placeholder=""
                   />
-              
+
                   <FormGroup controlId="formControlsTestOptions">
                     <ControlLabel>Test Options</ControlLabel>
                     <FormControl componentClass="select" placeholder="Choose Test Option">
@@ -80,7 +80,3 @@ var Log = React.createClass({
               });
 
 module.exports = Log;
-
-
-
-

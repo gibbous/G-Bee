@@ -25438,26 +25438,32 @@
 	// Reference the high-level components
 	var Main = __webpack_require__(224);
 
-	var Home = __webpack_require__(241);
-	var Log = __webpack_require__(225);
-	var Timer = __webpack_require__(226);
-	var Graph = __webpack_require__(227);
-	var Badges = __webpack_require__(238);
-	var Resources = __webpack_require__(239);
-	var Social = __webpack_require__(240);
+	var Home = __webpack_require__(225);
+	var Log = __webpack_require__(226);
+	var Timer = __webpack_require__(227);
+	var Graph = __webpack_require__(228);
+	var Badges = __webpack_require__(239);
+	var Resources = __webpack_require__(240);
+	var Social = __webpack_require__(241);
+	var Login = __webpack_require__(242);
+	var Signup = __webpack_require__(243);
+	var Profile = __webpack_require__(244);
 
 	// Export the Routes
 	module.exports = React.createElement(
-	    Route,
-	    { path: '/', component: Main },
-	    React.createElement(Route, { path: 'Home', component: Home }),
-	    React.createElement(Route, { path: 'Log', component: Log }),
-	    React.createElement(Route, { path: 'Timer', component: Timer }),
-	    React.createElement(Route, { path: 'Graph', component: Graph }),
-	    React.createElement(Route, { path: 'Badges', component: Badges }),
-	    React.createElement(Route, { path: 'Resources', component: Resources }),
-	    React.createElement(Route, { path: 'Social', component: Social }),
-	    React.createElement(IndexRoute, { component: Home })
+	  Route,
+	  { path: '/', component: Main },
+	  React.createElement(Route, { path: 'Home', component: Home }),
+	  React.createElement(Route, { path: 'Log', component: Log }),
+	  React.createElement(Route, { path: 'Timer', component: Timer }),
+	  React.createElement(Route, { path: 'Graph', component: Graph }),
+	  React.createElement(Route, { path: 'Badges', component: Badges }),
+	  React.createElement(Route, { path: 'Resources', component: Resources }),
+	  React.createElement(Route, { path: 'Social', component: Social }),
+	  React.createElement(Route, { path: 'Login', component: Login }),
+	  React.createElement(Route, { path: 'Signup', component: Signup }),
+	  React.createElement(Route, { path: 'Profile', component: Profile }),
+	  React.createElement(IndexRoute, { component: Home })
 	);
 
 /***/ },
@@ -25466,7 +25472,7 @@
 
 	"use strict";
 
-	// Include React 
+	// Include React
 	var React = __webpack_require__(2);
 
 	var Main = React.createClass({
@@ -25562,7 +25568,26 @@
 	            { className: "btn btn-danger btn-lg" },
 	            "Social"
 	          )
-	        )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Login" },
+	          React.createElement(
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Signup" },
+	          React.createElement(
+	            "button",
+	            { className: "btn btn-danger btn-lg" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement("signup", null)
 	      ),
 	      React.createElement(
 	        "div",
@@ -25572,12 +25597,19 @@
 	      React.createElement(
 	        "footer",
 	        null,
-	        React.createElement("hr", null),
 	        React.createElement(
-	          "p",
-	          { className: "pull-right" },
-	          React.createElement("i", { className: "fa fa-github", "aria-hidden": "true" }),
-	          " Proudly built using React.js"
+	          "div",
+	          { id: "footer" },
+	          React.createElement(
+	            "p",
+	            { className: "text-muted" },
+	            "\xA92016 GeeBee Project Group \xA0\xA0",
+	            React.createElement(
+	              "a",
+	              { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
+	              React.createElement("img", { alt: "The GitHub Logo", src: "github.png", width: "24", height: "24" })
+	            )
+	          )
 	        )
 	      )
 	    );
@@ -25589,6 +25621,52 @@
 
 /***/ },
 /* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	// Include React
+	var React = __webpack_require__(2);
+
+	var Home = React.createClass({
+	  displayName: "Home",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-lg-12" },
+	        React.createElement(
+	          "div",
+	          { className: "panel panel-danger" },
+	          React.createElement(
+	            "div",
+	            { className: "panel-heading" },
+	            React.createElement(
+	              "h3",
+	              { className: "panel-title" },
+	              "Home"
+	            )
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "panel-body" },
+	            "Panel content"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Home;
+
+/***/ },
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25623,7 +25701,78 @@
 	          React.createElement(
 	            "div",
 	            { className: "panel-body" },
-	            "Panel content"
+	            "const formInstance = (",
+	            React.createElement(
+	              "form",
+	              null,
+	              React.createElement(FieldGroup, {
+	                id: "formControlsDate",
+	                type: "date",
+	                label: "Date",
+	                placeholder: "Enter Date"
+	              }),
+	              React.createElement(FieldGroup, {
+	                id: "formControlsTime",
+	                type: "time",
+	                label: "Time",
+	                placeholder: "Enter Time"
+	              }),
+	              React.createElement(FieldGroup, {
+	                id: "formControlsReading",
+	                type: "number",
+	                label: "Blood Glucose Reading",
+	                placeholder: ""
+	              }),
+	              React.createElement(
+	                FormGroup,
+	                { controlId: "formControlsTestOptions" },
+	                React.createElement(
+	                  ControlLabel,
+	                  null,
+	                  "Test Options"
+	                ),
+	                React.createElement(
+	                  FormControl,
+	                  { componentClass: "select", placeholder: "Choose Test Option" },
+	                  React.createElement(
+	                    "option",
+	                    { value: "select" },
+	                    "Out of Bed (fasting)"
+	                  ),
+	                  React.createElement(
+	                    "option",
+	                    { value: "other" },
+	                    "After Breakfast"
+	                  ),
+	                  React.createElement(
+	                    "option",
+	                    { value: "other" },
+	                    "After Lunch"
+	                  ),
+	                  React.createElement(
+	                    "option",
+	                    { value: "other" },
+	                    "After Dinner"
+	                  )
+	                )
+	              ),
+	              React.createElement(
+	                FormGroup,
+	                { controlId: "formControlsNotearea" },
+	                React.createElement(
+	                  ControlLabel,
+	                  null,
+	                  "Notes"
+	                ),
+	                React.createElement(FormControl, { componentClass: "textarea", placeholder: "textarea" })
+	              ),
+	              React.createElement(
+	                Button,
+	                { type: "submit" },
+	                "Submit"
+	              )
+	            ),
+	            "); ReactDOM.render(formInstance, mountNode);"
 	          )
 	        )
 	      )
@@ -25634,7 +25783,7 @@
 	module.exports = Log;
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25680,14 +25829,14 @@
 	module.exports = Timer;
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	// Include React
 	var React = __webpack_require__(2);
-	var LineChart = __webpack_require__(228).Line;
+	var LineChart = __webpack_require__(229).Line;
 
 	var Graph = React.createClass({
 	  displayName: "Graph",
@@ -25718,31 +25867,31 @@
 	module.exports = Graph;
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = {
-	  Bar: __webpack_require__(229),
-	  Doughnut: __webpack_require__(233),
-	  Line: __webpack_require__(234),
-	  Pie: __webpack_require__(235),
-	  PolarArea: __webpack_require__(236),
-	  Radar: __webpack_require__(237),
-	  createClass: __webpack_require__(230).createClass
+	  Bar: __webpack_require__(230),
+	  Doughnut: __webpack_require__(234),
+	  Line: __webpack_require__(235),
+	  Pie: __webpack_require__(236),
+	  PolarArea: __webpack_require__(237),
+	  Radar: __webpack_require__(238),
+	  createClass: __webpack_require__(231).createClass
 	};
 
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
 
 	module.exports = vars.createClass('Bar', ['getBarsAtEvent']);
 
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(2);
@@ -25805,7 +25954,7 @@
 	    };
 
 	    classData.initializeChart = function(nextProps) {
-	      var Chart = __webpack_require__(231);
+	      var Chart = __webpack_require__(232);
 	      var el = ReactDOM.findDOMNode(this);
 	      var ctx = el.getContext("2d");
 	      var chart = new Chart(ctx)[chartType](nextProps.data, nextProps.options || {});
@@ -25896,7 +26045,7 @@
 
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -26210,7 +26359,7 @@
 				//Method for warning of errors
 				if (window.console && typeof window.console.warn === "function") console.warn(str);
 			},
-			amd = helpers.amd = ("function" === 'function' && __webpack_require__(232)),
+			amd = helpers.amd = ("function" === 'function' && __webpack_require__(233)),
 			//-- Math methods
 			isNumber = helpers.isNumber = function(n){
 				return !isNaN(parseFloat(n)) && isFinite(n);
@@ -29638,7 +29787,7 @@
 
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -29646,52 +29795,52 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 233 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var vars = __webpack_require__(230);
-
-	module.exports = vars.createClass('Doughnut', ['getSegmentsAtEvent']);
-
-
-/***/ },
 /* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
 
-	module.exports = vars.createClass('Line', ['getPointsAtEvent']);
+	module.exports = vars.createClass('Doughnut', ['getSegmentsAtEvent']);
 
 
 /***/ },
 /* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
 
-	module.exports = vars.createClass('Pie', ['getSegmentsAtEvent']);
+	module.exports = vars.createClass('Line', ['getPointsAtEvent']);
 
 
 /***/ },
 /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
 
-	module.exports = vars.createClass('PolarArea', ['getSegmentsAtEvent']);
+	module.exports = vars.createClass('Pie', ['getSegmentsAtEvent']);
 
 
 /***/ },
 /* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var vars = __webpack_require__(230);
+	var vars = __webpack_require__(231);
+
+	module.exports = vars.createClass('PolarArea', ['getSegmentsAtEvent']);
+
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var vars = __webpack_require__(231);
 
 	module.exports = vars.createClass('Radar', ['getPointsAtEvent']);
 
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29737,7 +29886,7 @@
 	module.exports = Badges;
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29783,7 +29932,7 @@
 	module.exports = Resources;
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29829,16 +29978,15 @@
 	module.exports = Social;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	// Include React
 	var React = __webpack_require__(2);
 
-	var Home = React.createClass({
-	  displayName: "Home",
+	var Login = React.createClass({
+	  displayName: "Login",
 
 
 	  render: function render() {
@@ -29848,31 +29996,195 @@
 	      { className: "container" },
 	      React.createElement(
 	        "div",
-	        { className: "col-lg-12" },
+	        { className: "col-sm-6 col-sm-offset-3" },
 	        React.createElement(
-	          "div",
-	          { className: "panel panel-danger" },
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          " Login"
+	        ),
+	        React.createElement(
+	          "form",
+	          { action: "/login", method: "post" },
 	          React.createElement(
 	            "div",
-	            { className: "panel-heading" },
+	            { className: "form-group" },
 	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Home"
-	            )
+	              "label",
+	              null,
+	              "Email"
+	            ),
+	            React.createElement("input", { type: "text", "class": "form-control", name: "email" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "panel-body" },
-	            "Panel content"
+	            { "class": "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Password"
+	            ),
+	            React.createElement("input", { type: "password", "class": "form-control", name: "password" })
+	          ),
+	          React.createElement(
+	            "button",
+	            { type: "submit", "class": "btn btn-warning btn-lg" },
+	            "Login"
 	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Need an account? ",
+	          React.createElement(
+	            "a",
+	            { href: "/signup" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Or go ",
+	          React.createElement(
+	            "a",
+	            { href: "/" },
+	            "Home"
+	          ),
+	          "."
 	        )
 	      )
 	    );
 	  }
 	});
 
-	module.exports = Home;
+	module.exports = Login;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Signup = React.createClass({
+	  displayName: "Signup",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-sm-6 col-sm-offset-3" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          " Login"
+	        ),
+	        React.createElement(
+	          "form",
+	          { action: "/signup", method: "post" },
+	          React.createElement(
+	            "div",
+	            { className: "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Email"
+	            ),
+	            React.createElement("input", { type: "text", "class": "form-control", name: "email" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { "class": "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Password"
+	            ),
+	            React.createElement("input", { type: "password", "class": "form-control", name: "password" })
+	          ),
+	          React.createElement(
+	            "button",
+	            { type: "submit", "class": "btn btn-warning btn-lg" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Already have an account? ",
+	          React.createElement(
+	            "a",
+	            { href: "/login" },
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Or go ",
+	          React.createElement(
+	            "a",
+	            { href: "/" },
+	            "Home"
+	          ),
+	          "."
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Signup;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Profile = React.createClass({
+	  displayName: "Profile",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "page-header text-center" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { "class": "fa fa-sign-in" }),
+	          "Profile Page"
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "/logout", className: "btn btn-default btn-sm" },
+	          "Logout"
+	        )
+	      ),
+	      React.createElement(
+	        "div",
+	        { className: "row" },
+	        "//Local Information"
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Profile;
 
 /***/ }
 /******/ ]);

@@ -12,13 +12,16 @@ var IndexRoute  = Router.IndexRoute;
 // Reference the high-level components
 var Main = require('../components/Main');
 
-var Home = require('../components/Children/Home'); 
-var Log = require('../components/Children/Log'); 
-var Timer = require('../components/Children/Timer'); 
-var Graph = require('../components/Children/Graph'); 
-var Badges = require('../components/Children/Badges'); 
-var Resources = require('../components/Children/Resources'); 
-var Social = require('../components/Children/Social'); 
+var Home = require('../components/Children/Home');
+var Log = require('../components/Children/Log');
+var Timer = require('../components/Children/Timer');
+var Graph = require('../components/Children/Graph');
+var Badges = require('../components/Children/Badges');
+var Resources = require('../components/Children/Resources');
+var Social = require('../components/Children/Social');
+var Login = require('../components/Children/Login');
+var Signup = require('../components/Children/Signup');
+var Profile = require('../components/Children/Profile');
 
 // Export the Routes
 module.exports = (
@@ -40,10 +43,15 @@ module.exports = (
     <Route path='Resources' component={Resources} />
     {/* If user selects Child2 then show the appropriate component*/}
     <Route path='Social' component={Social} />
-
+    {/* If user selects Login then show the appropriate component*/}
+    <Route path='Login' component={Login} />
+    {/* If user selects Signup then show the appropriate component*/}
+    <Route path='Signup' component={Signup} />
+    {/* If user selects Profile then show the appropriate component*/}
+    <Route path='Profile' component={Profile} />
     {/*If user selects any other path... we get the Home Route*/}
         <IndexRoute component={Home} />
-    
+
   </Route>
 
 
