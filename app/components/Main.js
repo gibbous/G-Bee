@@ -10,7 +10,7 @@ var Main = React.createClass({
 
       <div className="container">
         <div className="row">
-          <h2><strong>G-Bee</strong></h2>
+          <h1><strong>G-Bee</strong></h1>
           <p><em>Blood Glucose tracking app</em></p>
           <hr/>
           <a href="#/Login"><button className="btn btn-danger btn-lg">Login</button></a>

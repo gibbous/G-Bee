@@ -25488,7 +25488,7 @@
 	                                        "div",
 	                                        { className: "row" },
 	                                        React.createElement(
-	                                                  "h2",
+	                                                  "h1",
 	                                                  null,
 	                                                  React.createElement(
 	                                                            "strong",
@@ -25638,23 +25638,27 @@
 	      { className: "container" },
 	      React.createElement(
 	        "div",
-	        { className: "col-lg-12" },
+	        { className: "row" },
 	        React.createElement(
 	          "div",
-	          { className: "panel panel-danger" },
+	          { className: "col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8" },
 	          React.createElement(
 	            "div",
-	            { className: "panel-heading" },
+	            { className: "media" },
 	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Home"
+	              "div",
+	              { className: "media-body" },
+	              React.createElement(
+	                "p",
+	                { className: "text-muted text-left" },
+	                "Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire diabetic patients to better track their blood glucose readings with virtual medals and data visualization. It is valuable for diabetic patients to better understand and manage their blood glucose levels to minimize diabetic complications. Our app will reward patients for logging their results and achieving glucose readings within ADA guidelines. The app will also make data available for review with a patient's healthcare team."
+	              )
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "media-right media-middle" },
+	              React.createElement("img", { className: "media-object", alt: "Bee with Heart", src: "../assets/images/beeLogo.jpg" })
 	            )
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "panel-body" },
-	            "Panel content"
 	          )
 	        )
 	      )
