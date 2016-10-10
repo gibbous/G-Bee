@@ -25439,7 +25439,7 @@
 	var Main = __webpack_require__(224);
 
 	var Home = __webpack_require__(225);
-	var Log = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../components/Children/Log\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var Log = __webpack_require__(226);
 	var Timer = __webpack_require__(227);
 	var Graph = __webpack_require__(228);
 	var Badges = __webpack_require__(381);
@@ -25669,7 +25669,47 @@
 	module.exports = Home;
 
 /***/ },
-/* 226 */,
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	// Include React
+	var React = __webpack_require__(2);
+
+	var Log = React.createClass({
+	  displayName: "Log",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-lg-12" },
+	        React.createElement(
+	          "div",
+	          { className: "panel panel-danger" },
+	          React.createElement(
+	            "div",
+	            { className: "panel-heading" },
+	            React.createElement(
+	              "h3",
+	              { className: "panel-title" },
+	              "Log"
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Log;
+
+/***/ },
 /* 227 */
 /***/ function(module, exports, __webpack_require__) {
 

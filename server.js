@@ -14,8 +14,8 @@ var passport = require('passport');
 var passportLocal = require('passport-local');
 var flash = require('connect-flash');
 
-var configDB = require('./app/config/database.js');
-mongoose.connect(configDB.url);
+//var configDB = require('./app/config/database.js');
+//mongoose.connect(configDB.url);
 mongoose.connect('mongodb://localhost/G-Bee');
 require('./app/config/passport.js')(passport);
 

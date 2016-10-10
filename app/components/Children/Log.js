@@ -13,7 +13,7 @@ var Log = React.createClass({
             <div className="panel-heading">
               <h3 className="panel-title">Log</h3>
             </div>
-            <div className="panel-body">
+            {/*<div className="panel-body">
               function FieldGroup({ id, label, help, ...props }) {
                 return (
                   <FormGroup controlId={id}>
@@ -70,6 +70,8 @@ var Log = React.createClass({
               ReactDOM.render(formInstance, mountNode);
 
                           </div>
+
+                        */}
                         </div>
                       </div>
 
