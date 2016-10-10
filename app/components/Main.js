@@ -10,8 +10,8 @@ var Main = React.createClass({
 
       <div className="container">
         <div className="row">
-          <h1><strong>G-Bee</strong></h1>
-          <p><em>Blood Glucose tracking app</em></p>
+          <h1 className="main-text"><strong>G-Bee</strong></h1>
+          <p className="second-text"><em>Blood Glucose tracking app</em></p>
           <hr/>
           <a href="#/Login"><button className="btn btn-danger btn-lg">Login</button></a>
 
