@@ -2,6 +2,7 @@ body {
   background: yellow;
   background-image: url(/assets/images/honeycomb.jpg);
   text-align: center;
+  color: gray;
 
 }
 
@@ -9,6 +10,10 @@ li {
   background: #c38988;
   margin: 5px;
   padding: 5px;
+}
+
+p {
+  color: gray;
 }
 
 h1 {
