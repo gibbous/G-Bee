@@ -13,65 +13,38 @@ var Log = React.createClass({
             <div className="panel-heading">
               <h3 className="panel-title">Log</h3>
             </div>
-            {/*<div className="panel-body">
-              function FieldGroup({ id, label, help, ...props }) {
-                return (
-                  <FormGroup controlId={id}>
-                    <ControlLabel>{label}</ControlLabel>
-                    <FormControl {...props} />
-                    {help && <HelpBlock>{help}</HelpBlock>}
-                  </FormGroup>
-                );
-              }
 
-              const formInstance = (
-                <form>
-                  <FieldGroup
-                    id="formControlsDate"
-                    type="date"
-                    label="Date"
-                    placeholder="Enter Date"
-                  />
-                  <FieldGroup
-                    id="formControlsTime"
-                    type="time"
-                    label="Time"
-                    placeholder="Enter Time"
-                  />
+            {/*<form>
 
-                  <FieldGroup
-                    id="formControlsReading"
-                    type="number"
-                    label="Blood Glucose Reading"
-                    placeholder=""
-                  />
-              
-                  <FormGroup controlId="formControlsSelect">
-                    <ControlLabel>Test Options</ControlLabel>
-                    <FormControl componentClass="select" placeholder="Choose Test Option">
-                      <option value="select">Out of Bed (fasting)</option>
-                      <option value="other">After Breakfast</option>
-                      <option value="other">After Lunch</option>
-                      <option value="other">After Dinner</option>
-                    </FormControl>
-                  </FormGroup>
+               <div className="form-group">
+                <label for="exampleInputDate">Date</label>
+                <input type="date" className="form-control" id="formControlsDate" placeholder="Enter Date">
+              </div>
+              <div className="form-group">
+                <label for="exampleInputTime">Time</label>
+                <input type="time" className="form-control" id="formControlsTime" placeholder="Enter Time">
+              </div>
+              <div className="form-group">
+                <label for="exampleInputNumber">Blood Glucose Reading</label>
+                <input type="number" className="form-control" id="formControlsReading" placeholder="">
+              </div>
+               <div className="form-group">
+                <label for="exampleSelect1">Test Options</label>
+                <select className="form-control" id="formControlsSelect">
+                  <option>Out of Bed (fasting)</option>
+                  <option>After Breakfast</option>
+                  <option>After Lunch</option>
+                  <option>After Dinner</option>
+                  </select>
+              </div>
+                  <div className="form-group">
+                    <label for="exampleTextarea">Notes</label>
+                    <textarea className="form-control" id="formControlsNotearea" rows="3"></textarea>
+                  </div>              
 
-                  <FormGroup controlId="formControlsTextarea">
-                    <ControlLabel>Notes</ControlLabel>
-                    <FormControl componentClass="textarea" placeholder="textarea" />
-                  </FormGroup>
+                 <button type="submit" className="btn btn-default">Submit</button>               
 
-                  <Button type="submit">
-                    Submit
-                  </Button>
-                </form>
-              );
-
-              ReactDOM.render(formInstance, mountNode);
-
-                          </div>
-
-                        */}
+              </form>*/}
                         </div>
                       </div>
 
@@ -81,6 +54,3 @@ var Log = React.createClass({
               });
 
 module.exports = Log;
-
-
-
