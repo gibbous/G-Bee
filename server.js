@@ -19,6 +19,18 @@ require('./app/config/passport.js')(passport);
 app.use(express.static(__dirname + '/public'));
 // api routes go here
 
+
+
+
+
+
+
+
+
+
+
+
+
 //passport
 app.use(morgan('dev'));
 app.use(cookieParser());

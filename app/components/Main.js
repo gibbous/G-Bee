@@ -30,7 +30,7 @@ var Main = React.createClass({
           <a href="#/Social"><button className="btn btn-danger btn-lg">Social</button></a>
 
 
-            
+
         </div>
 
         <div className="row">
@@ -39,6 +39,10 @@ var Main = React.createClass({
           {this.props.children}
 
         </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
 
       {/*Footer goes here*/}
       <footer>

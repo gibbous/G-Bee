@@ -14,7 +14,11 @@ var Profile = React.createClass({
 
         <div className="row">
 
-          //Local Information
+        <p>
+						<strong>id</strong>: user._id,
+						<strong>email</strong>: user.local.username,
+						<strong>password</strong>: user.local.password
+				</p>
 
 
 
