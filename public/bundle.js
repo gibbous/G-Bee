@@ -25691,14 +25691,87 @@
 	        { className: "col-lg-12" },
 	        React.createElement(
 	          "div",
-	          { className: "panel panel-danger" },
+	          null,
 	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
+	            "form",
+	            { action: "logs/create?_method=PUT", method: "POST" },
 	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Log"
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleInputDate" },
+	                "Date"
+	              ),
+	              React.createElement("input", { type: "date", className: "form-control", id: "formControlsDate", placeholder: "Enter Date" })
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleInputTime" },
+	                "Time"
+	              ),
+	              React.createElement("input", { type: "time", className: "form-control", id: "formControlsTime", placeholder: "Enter Time" })
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleInputNumber" },
+	                "Blood Glucose Reading"
+	              ),
+	              React.createElement("input", { type: "number", className: "form-control", id: "formControlsReading", placeholder: "" })
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleSelect1" },
+	                "Test Options"
+	              ),
+	              React.createElement(
+	                "select",
+	                { className: "form-control", id: "formControlsSelect" },
+	                React.createElement(
+	                  "option",
+	                  null,
+	                  "Out of Bed (fasting)"
+	                ),
+	                React.createElement(
+	                  "option",
+	                  null,
+	                  "After Breakfast"
+	                ),
+	                React.createElement(
+	                  "option",
+	                  null,
+	                  "After Lunch"
+	                ),
+	                React.createElement(
+	                  "option",
+	                  null,
+	                  "After Dinner"
+	                )
+	              )
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleTextarea" },
+	                "Notes"
+	              ),
+	              React.createElement("textarea", { className: "form-control", id: "formControlsNotearea", rows: "3" })
+	            ),
+	            React.createElement(
+	              "button",
+	              { type: "submit", className: "btn btn-default" },
+	              "Submit"
 	            )
 	          )
 	        )
@@ -25824,7 +25897,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.defaults = exports.Bubble = exports.Polar = exports.Radar = exports.HorizontalBar = exports.Bar = exports.Line = exports.Pie = exports.Doughnut = undefined;
+	exports.Polar = exports.Radar = exports.HorizontalBar = exports.Bar = exports.Line = exports.Pie = exports.Doughnut = exports.Bubble = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -26176,8 +26249,6 @@
 
 		return Bubble;
 	}(_react2.default.Component);
-
-	var defaults = exports.defaults = _chart2.default.defaults;
 
 /***/ },
 /* 230 */
@@ -51396,7 +51467,7 @@
 		value: true
 	});
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -51422,15 +51493,10 @@
 		}
 
 		var keysA = Object.keys(objA);
-		var keysB = Object.keys(objB);
-		var allKeys = keysA.concat(keysB);
 
-		// Verify both objects have all the keys
-		for (var i = 0; i < allKeys.length; i++) {
-			if (!hasOwnProperty.call(objB, allKeys[i])) {
-				return false;
-			}
-			if (!hasOwnProperty.call(objA, allKeys[i])) {
+		// Test for A's keys different from B.
+		for (var i = 0; i < keysA.length; i++) {
+			if (!hasOwnProperty.call(objB, keysA[i])) {
 				return false;
 			}
 		}

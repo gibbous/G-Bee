@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var PORT = process.env.PORT || 8080;
+var methodOverride = require('method-override');
 
 var router = express.Router();
 var logs = require('./models/logs.js');
@@ -19,6 +20,8 @@ var flash = require('connect-flash');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/G-Bee');
 require('./app/config/passport.js')(passport);
 
+
+app.use(methodOverride('_method'));
 app.use(express.static(__dirname + '/public'));
 // api routes go here
 
