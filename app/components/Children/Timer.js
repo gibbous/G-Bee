@@ -1,6 +1,9 @@
 // Include React
 var React = require('react');
 
+var ReactCountdownClock = require("react-countdown-clock");
+
+
 var Timer = React.createClass({
 
   render: function(){
@@ -8,15 +11,12 @@ var Timer = React.createClass({
     return(
       <div className="container">
 
-        <div className="col-lg-12">
-          <div className="panel panel-danger">
-            <div className="panel-heading">
-              <h3 className="panel-title">Timer</h3>
-            </div>
-            <div className="panel-body">
-              Panel content
-            </div>
-          </div>
+        <div className="col-lg-12" id="timer">
+
+        <ReactCountdownClock seconds={60}
+                     color="#dc9800"
+                     alpha={0.9}
+                     size={300} />
         </div>
 
       </div>
