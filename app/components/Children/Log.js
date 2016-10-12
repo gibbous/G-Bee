@@ -9,78 +9,46 @@ var Log = React.createClass({
       <div className="container">
 
         <div className="col-lg-12">
-          <div className="panel panel-danger">
-            <div className="panel-heading">
-              <h3 className="panel-title">Log</h3>
-            </div>
-            {/*<div className="panel-body">
-              function FieldGroup({ id, label, help, ...props }) {
-                return (
-                  <FormGroup controlId={id}>
-                    <ControlLabel>{label}</ControlLabel>
-                    <FormControl {...props} />
-                    {help && <HelpBlock>{help}</HelpBlock>}
-                  </FormGroup>
-                );
-              }
+          <div >
 
-              const formInstance = (
-                <form>
-                  <FieldGroup
-                    id="formControlsDate"
-                    type="date"
-                    label="Date"
-                    placeholder="Enter Date"
-                  />
-                  <FieldGroup
-                    id="formControlsTime"
-                    type="time"
-                    label="Time"
-                    placeholder="Enter Time"
-                  />
+             <form action="logs/create" method="POST">
 
-                  <FieldGroup
-                    id="formControlsReading"
-                    type="number"
-                    label="Blood Glucose Reading"
-                    placeholder=""
-                  />
-              
-                  <FormGroup controlId="formControlsSelect">
-                    <ControlLabel>Test Options</ControlLabel>
-                    <FormControl componentClass="select" placeholder="Choose Test Option">
-                      <option value="select">Out of Bed (fasting)</option>
-                      <option value="other">After Breakfast</option>
-                      <option value="other">After Lunch</option>
-                      <option value="other">After Dinner</option>
-                    </FormControl>
-                  </FormGroup>
+               <div className="form-group">
+                <label htmlFor="exampleInputDate">Date</label>
+                <input type="date" name="date" className="form-control" id="formControlsDate" placeholder="Enter Date" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="exampleInputTime">Time</label>
+                <input type="time" name="time" className="form-control" id="formControlsTime" placeholder="Enter Time" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="exampleInputNumber">Blood Glucose Reading</label>
+                <input type="number" name="reading" className="form-control" id="formControlsReading" placeholder="" />
+              </div>
+               <div className="form-group">
+                <label htmlFor="exampleSelect1">Test Options</label>
+                <select className="form-control" name="type" id="formControlsSelect">
+                  <option value="a">Out of Bed (fasting)</option>
+                  <option value="b">After Breakfast</option>
+                  <option value="c">After Lunch</option>
+                  <option value="d">After Dinner</option>
+                  </select>
+              </div>
+                  <div className="form-group">
+                    <label htmlFor="exampleTextarea">Notes</label>
+                    <textarea className="form-control" name="notes" id="formControlsNotearea" rows="3"></textarea>
+                  </div>              
 
-                  <FormGroup controlId="formControlsTextarea">
-                    <ControlLabel>Notes</ControlLabel>
-                    <FormControl componentClass="textarea" placeholder="textarea" />
-                  </FormGroup>
+                 <button type="submit" className="btn btn-default">Submit</button>               
 
-                  <Button type="submit">
-                    Submit
-                  </Button>
-                </form>
-              );
-
-              ReactDOM.render(formInstance, mountNode);
-
-                          </div>
-
-                        */}
+              </form>
                         </div>
                       </div>
-
                     </div>
+
+                    
                   )
                 }
               });
 
 module.exports = Log;
-
-
-

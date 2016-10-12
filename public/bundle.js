@@ -25691,14 +25691,87 @@
 	        { className: "col-lg-12" },
 	        React.createElement(
 	          "div",
-	          { className: "panel panel-danger" },
+	          null,
 	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
+	            "form",
+	            { action: "logs/create", method: "POST" },
 	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Log"
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleInputDate" },
+	                "Date"
+	              ),
+	              React.createElement("input", { type: "date", name: "date", className: "form-control", id: "formControlsDate", placeholder: "Enter Date" })
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleInputTime" },
+	                "Time"
+	              ),
+	              React.createElement("input", { type: "time", name: "time", className: "form-control", id: "formControlsTime", placeholder: "Enter Time" })
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleInputNumber" },
+	                "Blood Glucose Reading"
+	              ),
+	              React.createElement("input", { type: "number", name: "reading", className: "form-control", id: "formControlsReading", placeholder: "" })
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleSelect1" },
+	                "Test Options"
+	              ),
+	              React.createElement(
+	                "select",
+	                { className: "form-control", name: "type", id: "formControlsSelect" },
+	                React.createElement(
+	                  "option",
+	                  { value: "a" },
+	                  "Out of Bed (fasting)"
+	                ),
+	                React.createElement(
+	                  "option",
+	                  { value: "b" },
+	                  "After Breakfast"
+	                ),
+	                React.createElement(
+	                  "option",
+	                  { value: "c" },
+	                  "After Lunch"
+	                ),
+	                React.createElement(
+	                  "option",
+	                  { value: "d" },
+	                  "After Dinner"
+	                )
+	              )
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "form-group" },
+	              React.createElement(
+	                "label",
+	                { htmlFor: "exampleTextarea" },
+	                "Notes"
+	              ),
+	              React.createElement("textarea", { className: "form-control", name: "notes", id: "formControlsNotearea", rows: "3" })
+	            ),
+	            React.createElement(
+	              "button",
+	              { type: "submit", className: "btn btn-default" },
+	              "Submit"
 	            )
 	          )
 	        )
