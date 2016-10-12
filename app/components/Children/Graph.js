@@ -8,7 +8,7 @@ const data = {
   datasets: [
     {
       label: 'G-Bee',
-      fill: false,
+      fill: true,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
       borderColor: 'rgba(75,192,192,1)',

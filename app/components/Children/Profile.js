@@ -8,14 +8,17 @@ var Profile = React.createClass({
       <div className="container">
 
         <div className="page-header text-center">
-          <h1><span class="fa fa-sign-in"></span>Profile Page</h1>
+          <h1><span className="fa fa-sign-in"></span>Profile Page</h1>
           <a href="/logout" className="btn btn-default btn-sm">Logout</a>
         </div>
 
         <div className="row">
 
-          //Local Information
-
+        <p>
+          <strong>id</strong>: user._id,
+          <strong>email</strong>: user.local.username,
+          <strong>password</strong>: user.local.password
+        </p>
 
 
         </div>

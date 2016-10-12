@@ -4,16 +4,16 @@ var ReactDOM = require('react-dom');
 
 // Grab the proeprty associated with the Router
 var Router = require('react-router').Router;
-var hashHistory = require('react-router').hashHistory;
+var browserHistory = require('react-router').browserHistory;
 
 // Grabs the Routes
 var routes = require('./config/routes');
 
-// Renders the contents according to the route page. 
+// Renders the contents according to the route page.
 // Displays the contents in the div app of index.html
 // Note how ReactDOM takes in two parameters (the contents and the location)
 ReactDOM.render(
 
-  <Router history={hashHistory}>{routes}</Router>,
+  <Router history={browserHistory}>{routes}</Router>,
   document.getElementById('app')
 )

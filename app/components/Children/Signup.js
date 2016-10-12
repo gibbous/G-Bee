@@ -8,19 +8,19 @@ var Signup = React.createClass({
       <div className="container">
 
         <div className="col-sm-6 col-sm-offset-3">
-        <h1><span class="fa fa-sign-in"></span> Signup</h1>
+        <h1><span className="fa fa-sign-in"></span> Signup</h1>
 
         <form action="/signup" method="post">
           <div className="form-group">
             <label>Email</label>
-            <input type="text" class="form-control" name="email" />
+            <input type="text" className="form-control" name="email" />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" name="password" />
+            <input type="password" className="form-control" name="password" />
           </div>
 
-          <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+          <button type="submit" className="btn btn-warning btn-lg">Signup</button>
         </form>
 
         <p>Already have an account? <a href="/login">Login</a></p>
