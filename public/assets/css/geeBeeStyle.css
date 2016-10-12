@@ -38,6 +38,20 @@ li {
     padding: 5px;
 }
 
+.mainBTN {
+    background-color: #000;
+    color: #ffff19;
+}
+
+.mainBTN:hover {
+    background-color: #595959;
+    color: #ffff19;
+}
+
+.mainIcons{
+    padding-left: 2px;
+}
+
 .container {
     background: white;
 }

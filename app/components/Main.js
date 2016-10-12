@@ -13,21 +13,21 @@ var Main = React.createClass({
           <h1 className="main-text"><strong>G-Bee</strong></h1>
           <p className="second-text"><em>Blood Glucose tracking app</em></p>
           <hr/>
-          <a href="#/Login"><button className="btn btn-danger btn-lg">Login</button></a>
+          <a href="#/Login"><button className="btn mainBTN btn-lg"><i className="fa fa-power-off fa-lg" aria-hidden="true"></i>Login</button></a>
 
-          <a href="#/Signup"><button className="btn btn-danger btn-lg">Signup</button></a>
-          <a href="#/Home"><button className="btn btn-danger btn-lg">Home</button></a>
-          <a href="#/Log"><button className="btn btn-danger btn-lg">Log</button></a>
+          <a href="#/Signup"><button className="btn mainBTN btn-lg"><i className="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>Signup</button></a>
+          <a href="#/Home"><button className="btn mainBTN btn-lg"><i className="fa fa-home fa-lg" aria-hidden="true"></i>Home</button></a>
+          <a href="#/Log"><button className="btn mainBTN btn-lg"><i className="fa fa-book fa-lg" aria-hidden="true"></i>Log</button></a>
 
-          <a href="#/Timer"><button className="btn btn-danger btn-lg">Timer</button></a>
+          <a href="#/Timer"><button className="btn mainBTN btn-lg"><i className="fa fa-clock-o fa-lg" aria-hidden="true"></i>Timer</button></a>
 
-          <a href="#/Graph"><button className="btn btn-danger btn-lg">Graph</button></a>
+          <a href="#/Graph"><button className="btn mainBTN btn-lg"><i className="fa fa-area-chart fa-lg" aria-hidden="true"></i>Graph</button></a>
 
-          <a href="#/Badges"><button className="btn btn-danger btn-lg">Badges</button></a>
+          <a href="#/Badges"><button className="btn mainBTN btn-lg"><i className="fa fa-trophy fa-lg" aria-hidden="true"></i>Badges</button></a>
 
-          <a href="#/Resources"><button className="btn btn-danger btn-lg">Resources</button></a>
+          <a href="#/Resources"><button className="btn mainBTN btn-lg"><i className="fa fa-folder-open fa-lg" aria-hidden="true"></i>Resources</button></a>
 
-          <a href="#/Social"><button className="btn btn-danger btn-lg">Social</button></a>
+          <a href="#/Social"><button className="btn mainBTN btn-lg"><i className="fa fa-comments fa-lg" aria-hidden="true"></i>Social</button></a>
 
 
             

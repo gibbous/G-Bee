@@ -27184,7 +27184,8 @@
 	                                                  { href: "#/Login" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-power-off fa-lg", "aria-hidden": "true" }),
 	                                                            "Login"
 	                                                  )
 	                                        ),
@@ -27193,7 +27194,8 @@
 	                                                  { href: "#/Signup" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-pencil-square-o fa-lg", "aria-hidden": "true" }),
 	                                                            "Signup"
 	                                                  )
 	                                        ),
@@ -27202,7 +27204,8 @@
 	                                                  { href: "#/Home" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-home fa-lg", "aria-hidden": "true" }),
 	                                                            "Home"
 	                                                  )
 	                                        ),
@@ -27211,7 +27214,8 @@
 	                                                  { href: "#/Log" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-book fa-lg", "aria-hidden": "true" }),
 	                                                            "Log"
 	                                                  )
 	                                        ),
@@ -27220,7 +27224,8 @@
 	                                                  { href: "#/Timer" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-clock-o fa-lg", "aria-hidden": "true" }),
 	                                                            "Timer"
 	                                                  )
 	                                        ),
@@ -27229,7 +27234,8 @@
 	                                                  { href: "#/Graph" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-area-chart fa-lg", "aria-hidden": "true" }),
 	                                                            "Graph"
 	                                                  )
 	                                        ),
@@ -27238,7 +27244,8 @@
 	                                                  { href: "#/Badges" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-trophy fa-lg", "aria-hidden": "true" }),
 	                                                            "Badges"
 	                                                  )
 	                                        ),
@@ -27247,7 +27254,8 @@
 	                                                  { href: "#/Resources" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-folder-open fa-lg", "aria-hidden": "true" }),
 	                                                            "Resources"
 	                                                  )
 	                                        ),
@@ -27256,7 +27264,8 @@
 	                                                  { href: "#/Social" },
 	                                                  React.createElement(
 	                                                            "button",
-	                                                            { className: "btn btn-danger btn-lg" },
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-comments fa-lg", "aria-hidden": "true" }),
 	                                                            "Social"
 	                                                  )
 	                                        )
@@ -27565,7 +27574,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.Polar = exports.Radar = exports.HorizontalBar = exports.Bar = exports.Line = exports.Pie = exports.Doughnut = exports.Bubble = undefined;
+	exports.defaults = exports.Bubble = exports.Polar = exports.Radar = exports.HorizontalBar = exports.Bar = exports.Line = exports.Pie = exports.Doughnut = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -27917,6 +27926,8 @@
 
 		return Bubble;
 	}(_react2.default.Component);
+
+	var defaults = exports.defaults = _chart2.default.defaults;
 
 /***/ },
 /* 244 */
@@ -53135,7 +53146,7 @@
 		value: true
 	});
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -53161,10 +53172,15 @@
 		}
 
 		var keysA = Object.keys(objA);
+		var keysB = Object.keys(objB);
+		var allKeys = keysA.concat(keysB);
 
-		// Test for A's keys different from B.
-		for (var i = 0; i < keysA.length; i++) {
-			if (!hasOwnProperty.call(objB, keysA[i])) {
+		// Verify both objects have all the keys
+		for (var i = 0; i < allKeys.length; i++) {
+			if (!hasOwnProperty.call(objB, allKeys[i])) {
+				return false;
+			}
+			if (!hasOwnProperty.call(objA, allKeys[i])) {
 				return false;
 			}
 		}
