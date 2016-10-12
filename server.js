@@ -21,29 +21,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/G-Bee');
 require('./app/config/passport.js')(passport);
 
 
-app.use(methodOverride('_method'));
-app.use(express.static(__dirname + '/public'));
-// api routes go here
-
-router.get('/logs', function (req, res) {
-  logs.selectAll(function (data) {
-    var logsObject = { logs: data };
-    console.log(logsObject);
-    res.send(logsObject);
-  });
-});
-
-router.post('/logs/create', function (req, res) {
-  logs.insertOne(['userId', 'userName', 'bgMgdl', 'readingType', 'notes', 'dateTimeActual'], [req.body.userId, req.body.userName, req.body.bgMgdl, req.body.readingType, req.body.notes, req.body.dateTimeActual], function () {
-    res.redirect('/logs');
-  });
-});
-
-router.post('/signup', function (req, res) {
-  console.log(req); 
-    res.redirect('/logs');
-  });
-
 
 //passport
 app.use(morgan('dev'));
@@ -57,12 +34,43 @@ app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
+
+app.use(express.static(__dirname + '/public'));
+
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/public/index.html');
 });
 
+
 //passport
 require('./models/connect.js')(app, passport);
+
+
+
+
+// api routes go here
+
+router.get('/logs', function (req, res) {
+  logs.selectAll(function (data) {
+    var logsObject = { logs: data };
+    console.log(logsObject);
+    res.send(logsObject);
+  });
+});
+console.log('creating post', 'logs/create');
+app.post('/logs/create', function (req, res) {
+    console.log('user', req.user);
+    console.log("in logs create",  req.body);
+  logs.insertOne(['userId', 'userName', 'bgMgdl', 'readingType', 'notes', 'dateTimeActual'], [req.body.userId, req.body.userName, req.body.reading, req.body.type, req.body.notes, req.body.date], function () {
+    res.redirect('/logs');
+  });
+});
+
+router.post('/signup', function (req, res) {
+  console.log(req); 
+    res.redirect('/logs');
+  });
+
 
 app.listen(PORT, function() {
   console.log("Server is running on port:%s", PORT);

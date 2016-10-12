@@ -25694,7 +25694,7 @@
 	          null,
 	          React.createElement(
 	            "form",
-	            { action: "logs/create?_method=PUT", method: "POST" },
+	            { action: "logs/create", method: "POST" },
 	            React.createElement(
 	              "div",
 	              { className: "form-group" },
@@ -25703,7 +25703,7 @@
 	                { htmlFor: "exampleInputDate" },
 	                "Date"
 	              ),
-	              React.createElement("input", { type: "date", className: "form-control", id: "formControlsDate", placeholder: "Enter Date" })
+	              React.createElement("input", { type: "date", name: "date", className: "form-control", id: "formControlsDate", placeholder: "Enter Date" })
 	            ),
 	            React.createElement(
 	              "div",
@@ -25713,7 +25713,7 @@
 	                { htmlFor: "exampleInputTime" },
 	                "Time"
 	              ),
-	              React.createElement("input", { type: "time", className: "form-control", id: "formControlsTime", placeholder: "Enter Time" })
+	              React.createElement("input", { type: "time", name: "time", className: "form-control", id: "formControlsTime", placeholder: "Enter Time" })
 	            ),
 	            React.createElement(
 	              "div",
@@ -25723,7 +25723,7 @@
 	                { htmlFor: "exampleInputNumber" },
 	                "Blood Glucose Reading"
 	              ),
-	              React.createElement("input", { type: "number", className: "form-control", id: "formControlsReading", placeholder: "" })
+	              React.createElement("input", { type: "number", name: "reading", className: "form-control", id: "formControlsReading", placeholder: "" })
 	            ),
 	            React.createElement(
 	              "div",
@@ -25735,25 +25735,25 @@
 	              ),
 	              React.createElement(
 	                "select",
-	                { className: "form-control", id: "formControlsSelect" },
+	                { className: "form-control", name: "type", id: "formControlsSelect" },
 	                React.createElement(
 	                  "option",
-	                  null,
+	                  { value: "a" },
 	                  "Out of Bed (fasting)"
 	                ),
 	                React.createElement(
 	                  "option",
-	                  null,
+	                  { value: "b" },
 	                  "After Breakfast"
 	                ),
 	                React.createElement(
 	                  "option",
-	                  null,
+	                  { value: "c" },
 	                  "After Lunch"
 	                ),
 	                React.createElement(
 	                  "option",
-	                  null,
+	                  { value: "d" },
 	                  "After Dinner"
 	                )
 	              )
@@ -25766,7 +25766,7 @@
 	                { htmlFor: "exampleTextarea" },
 	                "Notes"
 	              ),
-	              React.createElement("textarea", { className: "form-control", id: "formControlsNotearea", rows: "3" })
+	              React.createElement("textarea", { className: "form-control", name: "notes", id: "formControlsNotearea", rows: "3" })
 	            ),
 	            React.createElement(
 	              "button",
