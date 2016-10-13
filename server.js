@@ -18,7 +18,7 @@ var flash = require('connect-flash');
 //var configDB = require('./app/config/database.js');
 //mongoose.connect(configDB.url);
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/G-Bee');
-require('./app/config/passport.js')(passport);
+require('./config/passport.js')(passport);
 
 
 
