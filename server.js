@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
 var PORT = process.env.PORT || 8080;
-var methodOverride = require('method-override');
+//var methodOverride = require('method-override');
 
-var router = express.Router();
+//var router = express.Router();
 var logs = require('./models/logs.js');
 
 var cookieParser = require('cookie-parser');
@@ -23,9 +23,10 @@ require('./config/passport.js')(passport);
 
 
 //passport
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json())
 app.use(morgan('dev'));
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({extended: false}));
 app.use(session({secret: 'anystringoftext',
          saveUninitialized: true,
          resave: true}));
@@ -50,13 +51,15 @@ require('./models/connect.js')(app, passport);
 
 // api routes go here
 
-router.get('/logs', function (req, res) {
+app.get('/logs', function (req, res) {
   logs.selectAll(function (data) {
     var logsObject = { logs: data };
     console.log(logsObject);
     res.send(logsObject);
   });
 });
+
+
 console.log('creating post', 'logs/create');
 app.post('/logs/create', function (req, res) {
     console.log('user', req.user);
@@ -66,11 +69,17 @@ app.post('/logs/create', function (req, res) {
   });
 });
 
-router.post('/signup', function (req, res) {
+app.post('/signup', function (req, res) {
   console.log(req); 
-    res.redirect('/logs');
+    res.redirect('/login');
   });
 
+app.post('/login', function (req, res) {
+  console.log(req); 
+    res.redirect('/home');
+  });
+
+require('./models/connect.js')(app, passport);
 
 app.listen(PORT, function() {
   console.log("Server is running on port:%s", PORT);
