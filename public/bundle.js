@@ -27487,10 +27487,13 @@
 	      React.createElement(
 	        "div",
 	        { className: "col-lg-12", id: "timer" },
-	        React.createElement(ReactCountdownClock, { seconds: 60,
-	          color: "#dc9800",
+	        React.createElement(ReactCountdownClock, { seconds: 5
+	          //color="#dc9800"
+	          , color: "#8a5607",
 	          alpha: 0.9,
-	          size: 300 })
+	          size: 375
+	        }),
+	        "/>"
 	      )
 	    );
 	  }
@@ -53266,23 +53269,37 @@
 	      { className: "container" },
 	      React.createElement(
 	        "div",
-	        { className: "col-lg-12" },
+	        { className: "col-lg-12", id: "resources" },
 	        React.createElement(
-	          "div",
-	          { className: "panel panel-danger" },
+	          "h1",
+	          null,
+	          " References:"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
 	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
-	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Resources"
-	            )
-	          ),
+	            "a",
+	            { href: "https://www.accu-chek.com/testing-blood-sugar/when-test-your-blood-sugar/" },
+	            " When to test your blood sugar -- Roche"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
 	          React.createElement(
-	            "div",
-	            { className: "panel-body" },
-	            "Panel content"
+	            "a",
+	            { href: "http://www.diabetesselfmanagement.com/managing-diabetes/blood-glucose-management/blood-glucose-monitoring-when-to-check-and-why/" },
+	            "Blood Sugar Monitoring: When to Check and Why -- Published May 13, 2009 by Rebecca K. Abma"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          React.createElement(
+	            "a",
+	            { href: "http://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/blood-sugar/art-20046628/" },
+	            "Blood sugar testing: Why, when and how -- Mayo Clinic"
 	          )
 	        )
 	      )

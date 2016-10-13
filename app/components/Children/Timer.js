@@ -13,10 +13,14 @@ var Timer = React.createClass({
 
         <div className="col-lg-12" id="timer">
 
-        <ReactCountdownClock seconds={60}
-                     color="#dc9800"
+        <ReactCountdownClock seconds={5}
+                     //color="#dc9800"
+                     color="#8a5607"
                      alpha={0.9}
-                     size={300} />
+                     size={375} 
+                     />
+
+        />
         </div>
 
       </div>
