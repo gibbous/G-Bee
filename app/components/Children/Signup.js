@@ -8,7 +8,7 @@ var Signup = React.createClass({
       <div className="container">
 
         <div className="col-sm-6 col-sm-offset-3">
-        <h1><span className="fa fa-sign-in"></span> Signup</h1>
+        <h1><span className="fa fa-pencil-square-o"></span> Signup</h1>
 
         <form action="/signup" method="post">
           <div className="form-group">
