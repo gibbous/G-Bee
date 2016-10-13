@@ -94,3 +94,19 @@ li {
     padding-top:40px;
     padding-bottom:25px;
 }
+
+#resources h1 { 
+    font-size:60px;
+    font-weight: strong;
+}
+
+#resources p { 
+    text-align: left;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+#resources a { 
+    font-size:20px;
+    color:#000;
+}

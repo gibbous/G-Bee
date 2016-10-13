@@ -18,10 +18,14 @@ var Timer = React.createClass({
                      color="#8a5607"
                      alpha={0.9}
                      size={375} 
+                     //onComplete={alert("done")}
                      />
 
         />
+
+        
         </div>
+
 
       </div>
     )

@@ -27119,8 +27119,8 @@
 	var Resources = __webpack_require__(396);
 	var Social = __webpack_require__(397);
 	var Login = __webpack_require__(398);
-	var Signup = __webpack_require__(399);
-	var Profile = __webpack_require__(400);
+	var Signup = __webpack_require__(420);
+	var Profile = __webpack_require__(421);
 
 	// Export the Routes
 	module.exports = React.createElement(
@@ -27149,152 +27149,152 @@
 	var React = __webpack_require__(2);
 
 	var Main = React.createClass({
-	  displayName: "Main",
+	          displayName: "Main",
 
-	  // Here we render the function
-	  render: function render() {
+	          // Here we render the function
+	          render: function render() {
 
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "row" },
-	        React.createElement(
-	          "h1",
-	          { className: "main-text" },
-	          React.createElement(
-	            "strong",
-	            null,
-	            "G-Bee"
-	          )
-	        ),
-	        React.createElement(
-	          "p",
-	          { className: "second-text" },
-	          React.createElement(
-	            "em",
-	            null,
-	            "Blood Glucose tracking app"
-	          )
-	        ),
-	        React.createElement("hr", null),
-	        React.createElement(
-	          "a",
-	          { href: "#/Login" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-power-off fa-lg", "aria-hidden": "true" }),
-	            "Login"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Signup" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-pencil-square-o fa-lg", "aria-hidden": "true" }),
-	            "Signup"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Home" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-home fa-lg", "aria-hidden": "true" }),
-	            "Home"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Log" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-book fa-lg", "aria-hidden": "true" }),
-	            "Log"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Timer" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-clock-o fa-lg", "aria-hidden": "true" }),
-	            "Timer"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Graph" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-area-chart fa-lg", "aria-hidden": "true" }),
-	            "Graph"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Badges" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-trophy fa-lg", "aria-hidden": "true" }),
-	            "Badges"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Resources" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-folder-open fa-lg", "aria-hidden": "true" }),
-	            "Resources"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Social" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-comments fa-lg", "aria-hidden": "true" }),
-	            "Social"
-	          )
-	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "row" },
-	        this.props.children
-	      ),
-	      React.createElement(
-	        "footer",
-	        null,
-	        React.createElement(
-	          "div",
-	          { id: "footer" },
-	          React.createElement(
-	            "p",
-	            { className: "text-muted" },
-	            "\xA92016 GeeBee Project Group \xA0\xA0",
-	            React.createElement(
-	              "a",
-	              { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
-	              React.createElement("img", { alt: "The GitHub Logo", src: "../assets/images/github.png", width: "24", height: "24" })
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
+	                    return React.createElement(
+	                              "div",
+	                              { className: "container" },
+	                              React.createElement(
+	                                        "div",
+	                                        { className: "row" },
+	                                        React.createElement(
+	                                                  "h1",
+	                                                  { className: "main-text" },
+	                                                  React.createElement(
+	                                                            "strong",
+	                                                            null,
+	                                                            "G-Bee"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "p",
+	                                                  { className: "second-text" },
+	                                                  React.createElement(
+	                                                            "em",
+	                                                            null,
+	                                                            "Blood Glucose tracking app"
+	                                                  )
+	                                        ),
+	                                        React.createElement("hr", null),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Home" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-home fa-lg", "aria-hidden": "true" }),
+	                                                            "Home"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Log" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-book fa-lg", "aria-hidden": "true" }),
+	                                                            "Log"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Timer" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-clock-o fa-lg", "aria-hidden": "true" }),
+	                                                            "Timer"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Graph" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-area-chart fa-lg", "aria-hidden": "true" }),
+	                                                            "Graph"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Badges" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-trophy fa-lg", "aria-hidden": "true" }),
+	                                                            "Badges"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Resources" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-folder-open fa-lg", "aria-hidden": "true" }),
+	                                                            "Resources"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Social" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-comments fa-lg", "aria-hidden": "true" }),
+	                                                            "Social"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Login" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-power-off fa-lg", "aria-hidden": "true" }),
+	                                                            "Login"
+	                                                  )
+	                                        ),
+	                                        React.createElement(
+	                                                  "a",
+	                                                  { href: "#/Signup" },
+	                                                  React.createElement(
+	                                                            "button",
+	                                                            { className: "btn mainBTN btn-lg" },
+	                                                            React.createElement("i", { className: "fa fa-pencil-square-o fa-lg", "aria-hidden": "true" }),
+	                                                            "Signup"
+	                                                  )
+	                                        )
+	                              ),
+	                              React.createElement(
+	                                        "div",
+	                                        { className: "row" },
+	                                        this.props.children
+	                              ),
+	                              React.createElement(
+	                                        "footer",
+	                                        null,
+	                                        React.createElement(
+	                                                  "div",
+	                                                  { id: "footer" },
+	                                                  React.createElement(
+	                                                            "p",
+	                                                            { className: "text-muted" },
+	                                                            "\xA92016 GeeBee Project Group \xA0\xA0",
+	                                                            React.createElement(
+	                                                                      "a",
+	                                                                      { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
+	                                                                      React.createElement("img", { alt: "The GitHub Logo", src: "../assets/images/github.png", width: "24", height: "24" })
+	                                                            )
+	                                                  )
+	                                        )
+	                              )
+	                    );
+	          }
 	});
 
 	// Export the component back for use in other files
@@ -27476,27 +27476,28 @@
 	var ReactCountdownClock = __webpack_require__(241);
 
 	var Timer = React.createClass({
-	  displayName: "Timer",
+	        displayName: "Timer",
 
 
-	  render: function render() {
+	        render: function render() {
 
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "col-lg-12", id: "timer" },
-	        React.createElement(ReactCountdownClock, { seconds: 5
-	          //color="#dc9800"
-	          , color: "#8a5607",
-	          alpha: 0.9,
-	          size: 375
-	        }),
-	        "/>"
-	      )
-	    );
-	  }
+	                return React.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        React.createElement(
+	                                "div",
+	                                { className: "col-lg-12", id: "timer" },
+	                                React.createElement(ReactCountdownClock, { seconds: 5
+	                                        //color="#dc9800"
+	                                        , color: "#8a5607",
+	                                        alpha: 0.9,
+	                                        size: 375
+	                                        //onComplete={alert("done")}
+	                                }),
+	                                "/>"
+	                        )
+	                );
+	        }
 	});
 
 	module.exports = Timer;
@@ -53273,15 +53274,15 @@
 	        React.createElement(
 	          "h1",
 	          null,
-	          " References:"
+	          " References..."
 	        ),
 	        React.createElement(
 	          "p",
 	          null,
 	          React.createElement(
 	            "a",
-	            { href: "https://www.accu-chek.com/testing-blood-sugar/when-test-your-blood-sugar/" },
-	            " When to test your blood sugar -- Roche"
+	            { href: "https://www.accu-chek.com/testing-blood-sugar/when-test-your-blood-sugar/", target: "_blank" },
+	            "1.) When to test your blood sugar -- Roche"
 	          )
 	        ),
 	        React.createElement(
@@ -53289,8 +53290,8 @@
 	          null,
 	          React.createElement(
 	            "a",
-	            { href: "http://www.diabetesselfmanagement.com/managing-diabetes/blood-glucose-management/blood-glucose-monitoring-when-to-check-and-why/" },
-	            "Blood Sugar Monitoring: When to Check and Why -- Published May 13, 2009 by Rebecca K. Abma"
+	            { href: "http://www.diabetesselfmanagement.com/managing-diabetes/blood-glucose-management/blood-glucose-monitoring-when-to-check-and-why/", target: "_blank" },
+	            "2.) Blood Sugar Monitoring: When to Check and Why -- Published May 13, 2009 by Rebecca K. Abma"
 	          )
 	        ),
 	        React.createElement(
@@ -53298,8 +53299,8 @@
 	          null,
 	          React.createElement(
 	            "a",
-	            { href: "http://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/blood-sugar/art-20046628/" },
-	            "Blood sugar testing: Why, when and how -- Mayo Clinic"
+	            { href: "http://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/blood-sugar/art-20046628/", target: "_blank" },
+	            "3.) Blood sugar testing: Why, when and how -- Mayo Clinic"
 	          )
 	        )
 	      )
@@ -53364,8 +53365,8 @@
 	var _reactRouter = __webpack_require__(173);
 
 	var React = __webpack_require__(2);
-	var Api = __webpack_require__(401);
-	var storage = __webpack_require__(421);
+	var Api = __webpack_require__(399);
+	var storage = __webpack_require__(419);
 
 
 	var Login = React.createClass({
@@ -53501,156 +53502,9 @@
 /* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	var React = __webpack_require__(2);
-
-	var Signup = React.createClass({
-	  displayName: "Signup",
-
-
-	  render: function render() {
-
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "col-sm-6 col-sm-offset-3" },
-	        React.createElement(
-	          "h1",
-	          null,
-	          React.createElement("span", { className: "fa fa-sign-in" }),
-	          " Signup"
-	        ),
-	        React.createElement(
-	          "form",
-	          { action: "/signup", method: "post" },
-	          React.createElement(
-	            "div",
-	            { className: "form-group" },
-	            React.createElement(
-	              "label",
-	              null,
-	              "Email"
-	            ),
-	            React.createElement("input", { type: "text", className: "form-control", name: "email" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "form-group" },
-	            React.createElement(
-	              "label",
-	              null,
-	              "Password"
-	            ),
-	            React.createElement("input", { type: "password", className: "form-control", name: "password" })
-	          ),
-	          React.createElement(
-	            "button",
-	            { type: "submit", className: "btn btn-warning btn-lg" },
-	            "Signup"
-	          )
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Already have an account? ",
-	          React.createElement(
-	            "a",
-	            { href: "/login" },
-	            "Login"
-	          )
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Or go ",
-	          React.createElement(
-	            "a",
-	            { href: "/" },
-	            "Home"
-	          ),
-	          "."
-	        )
-	      )
-	    );
-	  }
-	});
-
-	module.exports = Signup;
-
-/***/ },
-/* 400 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var React = __webpack_require__(2);
-
-	var Profile = React.createClass({
-	  displayName: "Profile",
-
-
-	  render: function render() {
-
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "page-header text-center" },
-	        React.createElement(
-	          "h1",
-	          null,
-	          React.createElement("span", { className: "fa fa-sign-in" }),
-	          "Profile Page"
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "/logout", className: "btn btn-default btn-sm" },
-	          "Logout"
-	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "row" },
-	        React.createElement(
-	          "p",
-	          null,
-	          React.createElement(
-	            "strong",
-	            null,
-	            "id"
-	          ),
-	          ": user._id,",
-	          React.createElement(
-	            "strong",
-	            null,
-	            "email"
-	          ),
-	          ": user.local.username,",
-	          React.createElement(
-	            "strong",
-	            null,
-	            "password"
-	          ),
-	          ": user.local.password"
-	        )
-	      )
-	    );
-	  }
-	});
-
-	module.exports = Profile;
-
-/***/ },
-/* 401 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
-	var axios = __webpack_require__(402);
+	var axios = __webpack_require__(400);
 	window.axios = axios;
 
 	module.exports = {
@@ -53663,25 +53517,25 @@
 	};
 
 /***/ },
-/* 402 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(403);
+	module.exports = __webpack_require__(401);
 
 /***/ },
-/* 403 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var defaults = __webpack_require__(404);
-	var utils = __webpack_require__(405);
-	var dispatchRequest = __webpack_require__(407);
-	var InterceptorManager = __webpack_require__(416);
-	var isAbsoluteURL = __webpack_require__(417);
-	var combineURLs = __webpack_require__(418);
-	var bind = __webpack_require__(419);
-	var transformData = __webpack_require__(411);
+	var defaults = __webpack_require__(402);
+	var utils = __webpack_require__(403);
+	var dispatchRequest = __webpack_require__(405);
+	var InterceptorManager = __webpack_require__(414);
+	var isAbsoluteURL = __webpack_require__(415);
+	var combineURLs = __webpack_require__(416);
+	var bind = __webpack_require__(417);
+	var transformData = __webpack_require__(409);
 
 	function Axios(defaultConfig) {
 	  this.defaults = utils.merge({}, defaultConfig);
@@ -53770,7 +53624,7 @@
 	axios.all = function all(promises) {
 	  return Promise.all(promises);
 	};
-	axios.spread = __webpack_require__(420);
+	axios.spread = __webpack_require__(418);
 
 	// Provide aliases for supported request methods
 	utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
@@ -53798,13 +53652,13 @@
 
 
 /***/ },
-/* 404 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(405);
-	var normalizeHeaderName = __webpack_require__(406);
+	var utils = __webpack_require__(403);
+	var normalizeHeaderName = __webpack_require__(404);
 
 	var PROTECTION_PREFIX = /^\)\]\}',?\n/;
 	var DEFAULT_CONTENT_TYPE = {
@@ -53876,7 +53730,7 @@
 
 
 /***/ },
-/* 405 */
+/* 403 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54159,12 +54013,12 @@
 
 
 /***/ },
-/* 406 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(405);
+	var utils = __webpack_require__(403);
 
 	module.exports = function normalizeHeaderName(headers, normalizedName) {
 	  utils.forEach(headers, function processHeader(value, name) {
@@ -54177,7 +54031,7 @@
 
 
 /***/ },
-/* 407 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -54199,10 +54053,10 @@
 	        adapter = config.adapter;
 	      } else if (typeof XMLHttpRequest !== 'undefined') {
 	        // For browsers use XHR adapter
-	        adapter = __webpack_require__(408);
+	        adapter = __webpack_require__(406);
 	      } else if (typeof process !== 'undefined') {
 	        // For node use HTTP adapter
-	        adapter = __webpack_require__(408);
+	        adapter = __webpack_require__(406);
 	      }
 
 	      if (typeof adapter === 'function') {
@@ -54218,18 +54072,18 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 408 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
-	var utils = __webpack_require__(405);
-	var buildURL = __webpack_require__(409);
-	var parseHeaders = __webpack_require__(410);
-	var transformData = __webpack_require__(411);
-	var isURLSameOrigin = __webpack_require__(412);
-	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(413);
-	var settle = __webpack_require__(414);
+	var utils = __webpack_require__(403);
+	var buildURL = __webpack_require__(407);
+	var parseHeaders = __webpack_require__(408);
+	var transformData = __webpack_require__(409);
+	var isURLSameOrigin = __webpack_require__(410);
+	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(411);
+	var settle = __webpack_require__(412);
 
 	module.exports = function xhrAdapter(resolve, reject, config) {
 	  var requestData = config.data;
@@ -54326,7 +54180,7 @@
 	  // This is only done if running in a standard browser environment.
 	  // Specifically not if we're in a web worker, or react-native.
 	  if (utils.isStandardBrowserEnv()) {
-	    var cookies = __webpack_require__(415);
+	    var cookies = __webpack_require__(413);
 
 	    // Add xsrf header
 	    var xsrfValue = config.withCredentials || isURLSameOrigin(config.url) ?
@@ -54387,12 +54241,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 409 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(405);
+	var utils = __webpack_require__(403);
 
 	function encode(val) {
 	  return encodeURIComponent(val).
@@ -54461,12 +54315,12 @@
 
 
 /***/ },
-/* 410 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(405);
+	var utils = __webpack_require__(403);
 
 	/**
 	 * Parse headers into an object
@@ -54504,12 +54358,12 @@
 
 
 /***/ },
-/* 411 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(405);
+	var utils = __webpack_require__(403);
 
 	/**
 	 * Transform the data for a request or a response
@@ -54530,12 +54384,12 @@
 
 
 /***/ },
-/* 412 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(405);
+	var utils = __webpack_require__(403);
 
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -54604,7 +54458,7 @@
 
 
 /***/ },
-/* 413 */
+/* 411 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54646,7 +54500,7 @@
 
 
 /***/ },
-/* 414 */
+/* 412 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54670,12 +54524,12 @@
 
 
 /***/ },
-/* 415 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(405);
+	var utils = __webpack_require__(403);
 
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -54729,12 +54583,12 @@
 
 
 /***/ },
-/* 416 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(405);
+	var utils = __webpack_require__(403);
 
 	function InterceptorManager() {
 	  this.handlers = [];
@@ -54787,7 +54641,7 @@
 
 
 /***/ },
-/* 417 */
+/* 415 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54807,7 +54661,7 @@
 
 
 /***/ },
-/* 418 */
+/* 416 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54825,7 +54679,7 @@
 
 
 /***/ },
-/* 419 */
+/* 417 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54842,7 +54696,7 @@
 
 
 /***/ },
-/* 420 */
+/* 418 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54875,7 +54729,7 @@
 
 
 /***/ },
-/* 421 */
+/* 419 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -54899,6 +54753,153 @@
 	    localStorage.removeItem("User");
 	  }
 	};
+
+/***/ },
+/* 420 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Signup = React.createClass({
+	  displayName: "Signup",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "col-sm-6 col-sm-offset-3" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { className: "fa fa-sign-in" }),
+	          " Signup"
+	        ),
+	        React.createElement(
+	          "form",
+	          { action: "/signup", method: "post" },
+	          React.createElement(
+	            "div",
+	            { className: "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Email"
+	            ),
+	            React.createElement("input", { type: "text", className: "form-control", name: "email" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "form-group" },
+	            React.createElement(
+	              "label",
+	              null,
+	              "Password"
+	            ),
+	            React.createElement("input", { type: "password", className: "form-control", name: "password" })
+	          ),
+	          React.createElement(
+	            "button",
+	            { type: "submit", className: "btn btn-warning btn-lg" },
+	            "Signup"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Already have an account? ",
+	          React.createElement(
+	            "a",
+	            { href: "/login" },
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Or go ",
+	          React.createElement(
+	            "a",
+	            { href: "/" },
+	            "Home"
+	          ),
+	          "."
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Signup;
+
+/***/ },
+/* 421 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Profile = React.createClass({
+	  displayName: "Profile",
+
+
+	  render: function render() {
+
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "page-header text-center" },
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement("span", { className: "fa fa-sign-in" }),
+	          "Profile Page"
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "/logout", className: "btn btn-default btn-sm" },
+	          "Logout"
+	        )
+	      ),
+	      React.createElement(
+	        "div",
+	        { className: "row" },
+	        React.createElement(
+	          "p",
+	          null,
+	          React.createElement(
+	            "strong",
+	            null,
+	            "id"
+	          ),
+	          ": user._id,",
+	          React.createElement(
+	            "strong",
+	            null,
+	            "email"
+	          ),
+	          ": user.local.username,",
+	          React.createElement(
+	            "strong",
+	            null,
+	            "password"
+	          ),
+	          ": user.local.password"
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Profile;
 
 /***/ }
 /******/ ]);

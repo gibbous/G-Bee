@@ -13,10 +13,9 @@ var Main = React.createClass({
           <h1 className="main-text"><strong>G-Bee</strong></h1>
           <p className="second-text"><em>Blood Glucose tracking app</em></p>
           <hr/>
-          <a href="#/Login"><button className="btn mainBTN btn-lg"><i className="fa fa-power-off fa-lg" aria-hidden="true"></i>Login</button></a>
-
-          <a href="#/Signup"><button className="btn mainBTN btn-lg"><i className="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>Signup</button></a>
+          
           <a href="#/Home"><button className="btn mainBTN btn-lg"><i className="fa fa-home fa-lg" aria-hidden="true"></i>Home</button></a>
+
           <a href="#/Log"><button className="btn mainBTN btn-lg"><i className="fa fa-book fa-lg" aria-hidden="true"></i>Log</button></a>
 
           <a href="#/Timer"><button className="btn mainBTN btn-lg"><i className="fa fa-clock-o fa-lg" aria-hidden="true"></i>Timer</button></a>
@@ -29,6 +28,9 @@ var Main = React.createClass({
 
           <a href="#/Social"><button className="btn mainBTN btn-lg"><i className="fa fa-comments fa-lg" aria-hidden="true"></i>Social</button></a>
 
+          <a href="#/Login"><button className="btn mainBTN btn-lg"><i className="fa fa-power-off fa-lg" aria-hidden="true"></i>Login</button></a>
+
+          <a href="#/Signup"><button className="btn mainBTN btn-lg"><i className="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>Signup</button></a>
 
             
         </div>
