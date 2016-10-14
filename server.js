@@ -20,8 +20,7 @@ var passportLocal = require('passport-local');
 var flash = require('connect-flash');
 var logs = require('./models/logs.js');
 
-<<<<<<< HEAD
-=======
+
 //var configDB = require('./app/config/database.js');
 //mongoose.connect(configDB.url);
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/G-Bee');
@@ -30,7 +29,7 @@ require('./config/passport.js')(passport);
 
 
 //passport
->>>>>>> master
+
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json())
 app.use(morgan('dev'));
@@ -45,8 +44,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 
 //var configDB = require('./app/config/database.js');
 //mongoose.connect(configDB.url);
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/G-Bee');
-require('./config/passport.js')(passport);
+
 
 app.use(express.static(__dirname + '/public'));
 

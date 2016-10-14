@@ -10,7 +10,8 @@ module.exports = {
   },
   signup: function(email, password) {
     return axios.post('/signup', {email: email, password: password});
-  }
+  },
   profile: function(email, password) {
     return axios.post('/profile', {email: email, password: password});
+}
 };

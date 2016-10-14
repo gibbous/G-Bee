@@ -27149,154 +27149,6 @@
 	var React = __webpack_require__(2);
 
 	var Main = React.createClass({
-<<<<<<< HEAD
-	  displayName: "Main",
-
-	  // Here we render the function
-	  render: function render() {
-
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "row" },
-	        React.createElement(
-	          "h1",
-	          { className: "main-text" },
-	          React.createElement(
-	            "strong",
-	            null,
-	            "G-Bee"
-	          )
-	        ),
-	        React.createElement(
-	          "p",
-	          { className: "second-text" },
-	          React.createElement(
-	            "em",
-	            null,
-	            "Blood Glucose tracking app"
-	          )
-	        ),
-	        React.createElement("hr", null),
-	        React.createElement(
-	          "a",
-	          { href: "#/Login" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-sign-in fa-lg", "aria-hidden": "true" }),
-	            "Login"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Signup" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-pencil-square-o fa-lg", "aria-hidden": "true" }),
-	            "Signup"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Home" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-home fa-lg", "aria-hidden": "true" }),
-	            "Home"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Log" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-book fa-lg", "aria-hidden": "true" }),
-	            "Log"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Timer" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-clock-o fa-lg", "aria-hidden": "true" }),
-	            "Timer"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Graph" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-area-chart fa-lg", "aria-hidden": "true" }),
-	            "Graph"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Badges" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-trophy fa-lg", "aria-hidden": "true" }),
-	            "Badges"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Resources" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-folder-open fa-lg", "aria-hidden": "true" }),
-	            "Resources"
-	          )
-	        ),
-	        React.createElement(
-	          "a",
-	          { href: "#/Social" },
-	          React.createElement(
-	            "button",
-	            { className: "btn mainBTN btn-lg" },
-	            React.createElement("i", { className: "fa fa-comments fa-lg", "aria-hidden": "true" }),
-	            "Social"
-	          )
-	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "row" },
-	        this.props.children
-	      ),
-	      React.createElement(
-	        "footer",
-	        null,
-	        React.createElement(
-	          "div",
-	          { id: "footer" },
-	          React.createElement(
-	            "p",
-	            { className: "text-muted" },
-	            "\xA92016 GeeBee Project Group \xA0\xA0",
-	            React.createElement(
-	              "a",
-	              { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
-	              React.createElement("img", { alt: "The GitHub Logo", src: "../assets/images/github.png", width: "24", height: "24" })
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-=======
 	          displayName: "Main",
 
 	          // Here we render the function
@@ -27443,7 +27295,6 @@
 	                              )
 	                    );
 	          }
->>>>>>> master
 	});
 
 	// Export the component back for use in other files
@@ -27741,7 +27592,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.defaults = exports.Bubble = exports.Polar = exports.Radar = exports.HorizontalBar = exports.Bar = exports.Line = exports.Pie = exports.Doughnut = undefined;
+	exports.Polar = exports.Radar = exports.HorizontalBar = exports.Bar = exports.Line = exports.Pie = exports.Doughnut = exports.Bubble = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -28093,8 +27944,6 @@
 
 		return Bubble;
 	}(_react2.default.Component);
-
-	var defaults = exports.defaults = _chart2.default.defaults;
 
 /***/ },
 /* 244 */
@@ -53313,7 +53162,7 @@
 		value: true
 	});
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -53339,15 +53188,10 @@
 		}
 
 		var keysA = Object.keys(objA);
-		var keysB = Object.keys(objB);
-		var allKeys = keysA.concat(keysB);
 
-		// Verify both objects have all the keys
-		for (var i = 0; i < allKeys.length; i++) {
-			if (!hasOwnProperty.call(objB, allKeys[i])) {
-				return false;
-			}
-			if (!hasOwnProperty.call(objA, allKeys[i])) {
+		// Test for A's keys different from B.
+		for (var i = 0; i < keysA.length; i++) {
+			if (!hasOwnProperty.call(objB, keysA[i])) {
 				return false;
 			}
 		}
@@ -53660,6 +53504,9 @@
 	  },
 	  signup: function signup(email, password) {
 	    return axios.post('/signup', { email: email, password: password });
+	  },
+	  profile: function profile(email, password) {
+	    return axios.post('/profile', { email: email, password: password });
 	  }
 	};
 
