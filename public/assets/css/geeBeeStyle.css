@@ -7,8 +7,18 @@
     }
 }
 
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#home-text{
+    text-align: justify;
+    font-size: 18px;
+}
+
 .main-text {
-    background-image: url(https://static.pexels.com/photos/59829/honey-bee-water-buckfast-59829.jpeg);
+    background-image: url(/assets/images/honey-bee-water-buckfast-59829.jpeg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     color: #FFFFFF;
@@ -70,8 +80,9 @@ li {
     padding: 10px;
 }
 
-.label {
+label {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .create-update-form {
@@ -86,11 +97,27 @@ li {
 
 
 #timer { 
-    padding-top:40px;
+    padding-top:20px;
     padding-bottom:25px;
 }
 
 #resources { 
     padding-top:40px;
     padding-bottom:25px;
+}
+
+#resources h1 { 
+    font-size:60px;
+    font-weight: strong;
+}
+
+#resources p { 
+    text-align: left;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+#resources a { 
+    font-size:20px;
+    color:#000;
 }

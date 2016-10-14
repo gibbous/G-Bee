@@ -1,10 +1,14 @@
 var express = require('express');
 var app = express();
 var PORT = process.env.PORT || 8080;
-var methodOverride = require('method-override');
+//var methodOverride = require('method-override');
+
 
 var router = express.Router();
 
+
+//var router = express.Router();
+var logs = require('./models/logs.js');
 
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
@@ -16,6 +20,17 @@ var passportLocal = require('passport-local');
 var flash = require('connect-flash');
 var logs = require('./models/logs.js');
 
+<<<<<<< HEAD
+=======
+//var configDB = require('./app/config/database.js');
+//mongoose.connect(configDB.url);
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/G-Bee');
+require('./config/passport.js')(passport);
+
+
+
+//passport
+>>>>>>> master
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json())
 app.use(morgan('dev'));
@@ -48,6 +63,7 @@ app.use(express.static(__dirname + '/public'));
 
 // api routes go here
 
+
 // app.get('/logs', function (req, res) {
 //   logs.selectAll(function (data) {
 //     var logsObject = { logs: data };
@@ -73,6 +89,7 @@ app.use(express.static(__dirname + '/public'));
 // app.listen(PORT, function() {
 //   console.log("Server is running on port:%s", PORT);
 // });
+
 app.get('/logs', function (req, res) {
   logs.selectAll(function (data) {
     var logsObject = { logs: data };
@@ -80,14 +97,15 @@ app.get('/logs', function (req, res) {
     res.send(logsObject);
   });
 });
-//
+
+console.log('creating post', 'logs/create');
+
 app.post('/logs/create', function (req, res) {
   logs.insertOne(['userId', 'userName', 'bgMgdl', 'readingType', 'notes', 'dateTimeActual'], [req.body.userId, req.body.userName, req.body.bgMgdl, req.body.readingType, req.body.notes, req.body.dateTimeActual], function () {
     res.redirect('/logs');
   });
 });
 //
-
 
 
 //passport
@@ -104,8 +122,17 @@ app.get('*', function(req, res) {
   res.sendFile(__dirname + '/public/index.html');
 });
 
-//passport
+app.post('/signup', function (req, res) {
+  console.log(req);
+    res.redirect('/login');
+  });
 
+app.post('/login', function (req, res) {
+  console.log(req);
+    res.redirect('/home');
+  });
+
+require('./models/connect.js')(app, passport);
 
 app.listen(PORT, function() {
   console.log("Server is running on port:%s", PORT);
