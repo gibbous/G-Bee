@@ -1,6 +1,14 @@
 var React = require('react');
+var Api = require('../../utils/api');
+var storage = require('../../utils/storage');
 
 var Signup = React.createClass({
+  getInitialState: function() {
+    return {
+      email: '',
+      password: ''
+    }
+  },
 
   render: function(){
 
@@ -10,14 +18,24 @@ var Signup = React.createClass({
         <div className="col-sm-6 col-sm-offset-3">
         <h1><span className="fa fa-pencil-square-o"></span> Signup</h1>
 
-        <form action="/signup" method="post">
+        <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>Email</label>
-            <input type="text" className="form-control" name="email" />
+            <input
+              value={this.state.email}
+              onChange={(event) => this.setState({email: event.target.value})}
+              type="text"
+              className="form-control"
+            />
           </div>
           <div className="form-group">
             <label>Password</label>
-            <input type="password" className="form-control" name="password" />
+            <input
+              value={this.state.password}
+              onChange={(event) => this.setState({password: event.target.value})}
+              type="password"
+              className="form-control"
+            />
           </div>
 
           <button type="submit" className="btn btn-warning btn-lg">Signup</button>
@@ -29,6 +47,13 @@ var Signup = React.createClass({
 
       </div>
     )
+  },
+  handleSubmit: function(event) {
+    event.preventDefault();
+    Api.signup(this.state.email, this.state.password).then(function(res) {
+      console.log(res);
+    });
+    this.setState(this.getInitialState());
   }
 });
 
