@@ -27476,27 +27476,41 @@
 	var ReactCountdownClock = __webpack_require__(241);
 
 	var Timer = React.createClass({
-	  displayName: "Timer",
+	        displayName: "Timer",
 
 
-	  render: function render() {
+	        render: function render() {
 
-	    return React.createElement(
-	      "div",
-	      { className: "container" },
-	      React.createElement(
-	        "div",
-	        { className: "col-lg-12", id: "timer" },
-	        React.createElement(ReactCountdownClock, { seconds: 5
-	          //color="#dc9800"
-	          , color: "#8a5607",
-	          alpha: 0.9,
-	          size: 375
-	        }),
-	        "/>"
-	      )
-	    );
-	  }
+	                return React.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        React.createElement(
+	                                "div",
+	                                { className: "col-lg-12", id: "timer" },
+	                                React.createElement(
+	                                        "h2",
+	                                        null,
+	                                        " Start the timer when you start to eat. ",
+	                                        React.createElement("br", null),
+	                                        " Check your blood glucose reading when the timer ends (2 hours). "
+	                                ),
+	                                React.createElement(
+	                                        "p",
+	                                        null,
+	                                        "\xA0"
+	                                ),
+	                                React.createElement(ReactCountdownClock, {
+	                                        seconds: 7200 //2 hour countdown
+
+	                                        //color="#dc9800"
+	                                        , color: "#8a5607",
+	                                        alpha: 0.9,
+	                                        size: 375
+	                                        //onComplete={myCallback}
+	                                })
+	                        )
+	                );
+	        }
 	});
 
 	module.exports = Timer;
@@ -53264,17 +53278,13 @@
 	        "div",
 	        { className: "col-lg-12", id: "resources" },
 	        React.createElement(
-	          "h1",
-	          null,
-	          " References..."
-	        ),
-	        React.createElement(
 	          "p",
 	          null,
 	          React.createElement(
 	            "a",
 	            { href: "https://www.accu-chek.com/testing-blood-sugar/when-test-your-blood-sugar/", target: "_blank" },
-	            "1.) When to test your blood sugar -- Roche"
+	            React.createElement("i", { className: "fa fa-tint fa-lg", "aria-hidden": "true" }),
+	            " When to test your blood sugar -- Roche"
 	          )
 	        ),
 	        React.createElement(
@@ -53283,7 +53293,8 @@
 	          React.createElement(
 	            "a",
 	            { href: "http://www.diabetesselfmanagement.com/managing-diabetes/blood-glucose-management/blood-glucose-monitoring-when-to-check-and-why/", target: "_blank" },
-	            "2.) Blood Sugar Monitoring: When to Check and Why -- Published May 13, 2009 by Rebecca K. Abma"
+	            React.createElement("i", { className: "fa fa-tint fa-lg", "aria-hidden": "true" }),
+	            " Blood Sugar Monitoring: When to Check and Why -- Published May 13, 2009 by Rebecca K. Abma"
 	          )
 	        ),
 	        React.createElement(
@@ -53292,7 +53303,8 @@
 	          React.createElement(
 	            "a",
 	            { href: "http://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/blood-sugar/art-20046628/", target: "_blank" },
-	            "3.) Blood sugar testing: Why, when and how -- Mayo Clinic"
+	            React.createElement("i", { className: "fa fa-tint fa-lg", "aria-hidden": "true" }),
+	            " Blood sugar testing: Why, when and how -- Mayo Clinic"
 	          )
 	        )
 	      )
