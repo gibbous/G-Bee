@@ -16,6 +16,15 @@ module.exports = function(app, passport){
 		}
 		res.json(user);
 	});
+
+	app.post('/signup', passport.authenticate('local-signup'), function(req, res) {
+		var user = {
+			_id: req.user._id,
+			username: req.user.local.username,
+			_expires: req.session.cookie._expires
+		}
+		res.json(user);
+	});
 	//
 	// app.get('/signup', function(req, res){
 	// 	res.render('signup.js', { message: req.flash('signupMessage') });

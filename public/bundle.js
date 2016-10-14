@@ -64,7 +64,7 @@
 	// Grabs the Routes
 	var routes = __webpack_require__(236);
 
-	// Renders the contents according to the route page. 
+	// Renders the contents according to the route page.
 	// Displays the contents in the div app of index.html
 	// Note how ReactDOM takes in two parameters (the contents and the location)
 	ReactDOM.render(React.createElement(
@@ -27149,152 +27149,152 @@
 	var React = __webpack_require__(2);
 
 	var Main = React.createClass({
-	          displayName: "Main",
+	  displayName: "Main",
 
-	          // Here we render the function
-	          render: function render() {
+	  // Here we render the function
+	  render: function render() {
 
-	                    return React.createElement(
-	                              "div",
-	                              { className: "container" },
-	                              React.createElement(
-	                                        "div",
-	                                        { className: "row" },
-	                                        React.createElement(
-	                                                  "h1",
-	                                                  { className: "main-text" },
-	                                                  React.createElement(
-	                                                            "strong",
-	                                                            null,
-	                                                            "G-Bee"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "p",
-	                                                  { className: "second-text" },
-	                                                  React.createElement(
-	                                                            "em",
-	                                                            null,
-	                                                            "Blood Glucose tracking app"
-	                                                  )
-	                                        ),
-	                                        React.createElement("hr", null),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Login" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-sign-in fa-lg", "aria-hidden": "true" }),
-	                                                            "Login"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Signup" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-pencil-square-o fa-lg", "aria-hidden": "true" }),
-	                                                            "Signup"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Home" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-home fa-lg", "aria-hidden": "true" }),
-	                                                            "Home"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Log" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-book fa-lg", "aria-hidden": "true" }),
-	                                                            "Log"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Timer" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-clock-o fa-lg", "aria-hidden": "true" }),
-	                                                            "Timer"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Graph" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-area-chart fa-lg", "aria-hidden": "true" }),
-	                                                            "Graph"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Badges" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-trophy fa-lg", "aria-hidden": "true" }),
-	                                                            "Badges"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Resources" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-folder-open fa-lg", "aria-hidden": "true" }),
-	                                                            "Resources"
-	                                                  )
-	                                        ),
-	                                        React.createElement(
-	                                                  "a",
-	                                                  { href: "#/Social" },
-	                                                  React.createElement(
-	                                                            "button",
-	                                                            { className: "btn mainBTN btn-lg" },
-	                                                            React.createElement("i", { className: "fa fa-comments fa-lg", "aria-hidden": "true" }),
-	                                                            "Social"
-	                                                  )
-	                                        )
-	                              ),
-	                              React.createElement(
-	                                        "div",
-	                                        { className: "row" },
-	                                        this.props.children
-	                              ),
-	                              React.createElement(
-	                                        "footer",
-	                                        null,
-	                                        React.createElement(
-	                                                  "div",
-	                                                  { id: "footer" },
-	                                                  React.createElement(
-	                                                            "p",
-	                                                            { className: "text-muted" },
-	                                                            "\xA92016 GeeBee Project Group \xA0\xA0",
-	                                                            React.createElement(
-	                                                                      "a",
-	                                                                      { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
-	                                                                      React.createElement("img", { alt: "The GitHub Logo", src: "../assets/images/github.png", width: "24", height: "24" })
-	                                                            )
-	                                                  )
-	                                        )
-	                              )
-	                    );
-	          }
+	    return React.createElement(
+	      "div",
+	      { className: "container" },
+	      React.createElement(
+	        "div",
+	        { className: "row" },
+	        React.createElement(
+	          "h1",
+	          { className: "main-text" },
+	          React.createElement(
+	            "strong",
+	            null,
+	            "G-Bee"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          { className: "second-text" },
+	          React.createElement(
+	            "em",
+	            null,
+	            "Blood Glucose tracking app"
+	          )
+	        ),
+	        React.createElement("hr", null),
+	        React.createElement(
+	          "a",
+	          { href: "#/Login" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-sign-in fa-lg", "aria-hidden": "true" }),
+	            "Login"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Signup" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-pencil-square-o fa-lg", "aria-hidden": "true" }),
+	            "Signup"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Home" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-home fa-lg", "aria-hidden": "true" }),
+	            "Home"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Log" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-book fa-lg", "aria-hidden": "true" }),
+	            "Log"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Timer" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-clock-o fa-lg", "aria-hidden": "true" }),
+	            "Timer"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Graph" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-area-chart fa-lg", "aria-hidden": "true" }),
+	            "Graph"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Badges" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-trophy fa-lg", "aria-hidden": "true" }),
+	            "Badges"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Resources" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-folder-open fa-lg", "aria-hidden": "true" }),
+	            "Resources"
+	          )
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#/Social" },
+	          React.createElement(
+	            "button",
+	            { className: "btn mainBTN btn-lg" },
+	            React.createElement("i", { className: "fa fa-comments fa-lg", "aria-hidden": "true" }),
+	            "Social"
+	          )
+	        )
+	      ),
+	      React.createElement(
+	        "div",
+	        { className: "row" },
+	        this.props.children
+	      ),
+	      React.createElement(
+	        "footer",
+	        null,
+	        React.createElement(
+	          "div",
+	          { id: "footer" },
+	          React.createElement(
+	            "p",
+	            { className: "text-muted" },
+	            "\xA92016 GeeBee Project Group \xA0\xA0",
+	            React.createElement(
+	              "a",
+	              { href: "https://github.com/gibbous/G-Bee", className: "invertocat" },
+	              React.createElement("img", { alt: "The GitHub Logo", src: "../assets/images/github.png", width: "24", height: "24" })
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
 	});
 
 	// Export the component back for use in other files
@@ -27577,7 +27577,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.Polar = exports.Radar = exports.HorizontalBar = exports.Bar = exports.Line = exports.Pie = exports.Doughnut = exports.Bubble = undefined;
+	exports.defaults = exports.Bubble = exports.Polar = exports.Radar = exports.HorizontalBar = exports.Bar = exports.Line = exports.Pie = exports.Doughnut = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -27929,6 +27929,8 @@
 
 		return Bubble;
 	}(_react2.default.Component);
+
+	var defaults = exports.defaults = _chart2.default.defaults;
 
 /***/ },
 /* 244 */
@@ -53147,7 +53149,7 @@
 		value: true
 	});
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -53173,10 +53175,15 @@
 		}
 
 		var keysA = Object.keys(objA);
+		var keysB = Object.keys(objB);
+		var allKeys = keysA.concat(keysB);
 
-		// Test for A's keys different from B.
-		for (var i = 0; i < keysA.length; i++) {
-			if (!hasOwnProperty.call(objB, keysA[i])) {
+		// Verify both objects have all the keys
+		for (var i = 0; i < allKeys.length; i++) {
+			if (!hasOwnProperty.call(objB, allKeys[i])) {
+				return false;
+			}
+			if (!hasOwnProperty.call(objA, allKeys[i])) {
 				return false;
 			}
 		}
@@ -53505,6 +53512,9 @@
 	  },
 	  logout: function logout() {
 	    return axios.get('/logout');
+	  },
+	  signup: function signup(email, password) {
+	    return axios.post('/signup', { email: email, password: password });
 	  }
 	};
 
@@ -54750,80 +54760,110 @@
 /* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(2);
+	var Api = __webpack_require__(399);
+	var storage = __webpack_require__(419);
 
 	var Signup = React.createClass({
-	  displayName: "Signup",
+	  displayName: 'Signup',
 
+	  getInitialState: function getInitialState() {
+	    return {
+	      email: '',
+	      password: ''
+	    };
+	  },
 
 	  render: function render() {
+	    var _this = this;
 
 	    return React.createElement(
-	      "div",
-	      { className: "container" },
+	      'div',
+	      { className: 'container' },
 	      React.createElement(
-	        "div",
-	        { className: "col-sm-6 col-sm-offset-3" },
+	        'div',
+	        { className: 'col-sm-6 col-sm-offset-3' },
 	        React.createElement(
-	          "h1",
+	          'h1',
 	          null,
-	          React.createElement("span", { className: "fa fa-pencil-square-o" }),
-	          " Signup"
+	          React.createElement('span', { className: 'fa fa-pencil-square-o' }),
+	          ' Signup'
 	        ),
 	        React.createElement(
-	          "form",
-	          { action: "/signup", method: "post" },
+	          'form',
+	          { onSubmit: this.handleSubmit },
 	          React.createElement(
-	            "div",
-	            { className: "form-group" },
+	            'div',
+	            { className: 'form-group' },
 	            React.createElement(
-	              "label",
+	              'label',
 	              null,
-	              "Email"
+	              'Email'
 	            ),
-	            React.createElement("input", { type: "text", className: "form-control", name: "email" })
+	            React.createElement('input', {
+	              value: this.state.email,
+	              onChange: function onChange(event) {
+	                return _this.setState({ email: event.target.value });
+	              },
+	              type: 'text',
+	              className: 'form-control'
+	            })
 	          ),
 	          React.createElement(
-	            "div",
-	            { className: "form-group" },
+	            'div',
+	            { className: 'form-group' },
 	            React.createElement(
-	              "label",
+	              'label',
 	              null,
-	              "Password"
+	              'Password'
 	            ),
-	            React.createElement("input", { type: "password", className: "form-control", name: "password" })
+	            React.createElement('input', {
+	              value: this.state.password,
+	              onChange: function onChange(event) {
+	                return _this.setState({ password: event.target.value });
+	              },
+	              type: 'password',
+	              className: 'form-control'
+	            })
 	          ),
 	          React.createElement(
-	            "button",
-	            { type: "submit", className: "btn btn-warning btn-lg" },
-	            "Signup"
+	            'button',
+	            { type: 'submit', className: 'btn btn-warning btn-lg' },
+	            'Signup'
 	          )
 	        ),
 	        React.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "Already have an account? ",
+	          'Already have an account? ',
 	          React.createElement(
-	            "a",
-	            { href: "/login" },
-	            "Login"
+	            'a',
+	            { href: '/login' },
+	            'Login'
 	          )
 	        ),
 	        React.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "Or go ",
+	          'Or go ',
 	          React.createElement(
-	            "a",
-	            { href: "/" },
-	            "Home"
+	            'a',
+	            { href: '/' },
+	            'Home'
 	          ),
-	          "."
+	          '.'
 	        )
 	      )
 	    );
+	  },
+	  handleSubmit: function handleSubmit(event) {
+	    event.preventDefault();
+	    Api.signup(this.state.email, this.state.password).then(function (res) {
+	      console.log(res);
+	    });
+	    this.setState(this.getInitialState());
 	  }
 	});
 
