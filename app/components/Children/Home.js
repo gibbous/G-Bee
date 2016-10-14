@@ -8,13 +8,13 @@ var Home = React.createClass({
     return(
       <div className="container">
         <div className="row">
-          <div className="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8">
+          <div className="col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10">
 
             <div className="media">
              
               <div className="media-body">
               
-                <p className="text-muted text-left">Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire diabetic patients to better track their blood glucose readings with virtual medals and data visualization. It is valuable for diabetic patients to better understand and manage their blood glucose levels to minimize diabetic complications. Our app will reward patients for logging their results and achieving glucose readings within ADA guidelines. The app will also make data available for review with a patient's healthcare team.</p>
+                <p className="text-muted text-left" id="home-text">Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire diabetic patients to better track their blood glucose readings with virtual medals and data visualization. It is valuable for diabetic patients to better understand and manage their blood glucose levels to minimize diabetic complications. Our app will reward patients for logging their results and achieving glucose readings within ADA guidelines. The app will also make data available for review with a patient's healthcare team.</p>
               </div>
                <div className="media-right media-middle">
                     

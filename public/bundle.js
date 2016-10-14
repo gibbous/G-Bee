@@ -27323,7 +27323,7 @@
 	        { className: "row" },
 	        React.createElement(
 	          "div",
-	          { className: "col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8" },
+	          { className: "col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10" },
 	          React.createElement(
 	            "div",
 	            { className: "media" },
@@ -27332,7 +27332,7 @@
 	              { className: "media-body" },
 	              React.createElement(
 	                "p",
-	                { className: "text-muted text-left" },
+	                { className: "text-muted text-left", id: "home-text" },
 	                "Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire diabetic patients to better track their blood glucose readings with virtual medals and data visualization. It is valuable for diabetic patients to better understand and manage their blood glucose levels to minimize diabetic complications. Our app will reward patients for logging their results and achieving glucose readings within ADA guidelines. The app will also make data available for review with a patient's healthcare team."
 	              )
 	            ),
@@ -27370,7 +27370,7 @@
 	      { className: "container" },
 	      React.createElement(
 	        "div",
-	        { className: "col-lg-12" },
+	        { className: "col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10" },
 	        React.createElement(
 	          "div",
 	          null,
@@ -27403,9 +27403,9 @@
 	              React.createElement(
 	                "label",
 	                { htmlFor: "exampleInputNumber" },
-	                "Blood Glucose Reading"
+	                "Blood Glucose Reading (mg/dL)"
 	              ),
-	              React.createElement("input", { type: "number", name: "reading", className: "form-control", id: "formControlsReading", placeholder: "" })
+	              React.createElement("input", { type: "number", name: "reading", className: "form-control", id: "formControlsReading", placeholder: "100" })
 	            ),
 	            React.createElement(
 	              "div",
@@ -27418,6 +27418,7 @@
 	              React.createElement(
 	                "select",
 	                { className: "form-control", name: "type", id: "formControlsSelect" },
+	                React.createElement("option", { value: "" }),
 	                React.createElement(
 	                  "option",
 	                  { value: "a" },
@@ -27452,7 +27453,7 @@
 	            ),
 	            React.createElement(
 	              "button",
-	              { type: "submit", className: "btn btn-default" },
+	              { type: "submit", className: "btn btn-warning btn-lg" },
 	              "Submit"
 	            )
 	          )
@@ -53334,25 +53335,8 @@
 	      { className: "container" },
 	      React.createElement(
 	        "div",
-	        { className: "col-lg-12" },
-	        React.createElement(
-	          "div",
-	          { className: "panel panel-danger" },
-	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
-	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Social"
-	            )
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "panel-body" },
-	            "Panel content"
-	          )
-	        )
+	        { className: "col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10" },
+	        "For future development, we'd like to allow users to opt-in to leaderboards to compete and compare with other users for motivation."
 	      )
 	    );
 	  }

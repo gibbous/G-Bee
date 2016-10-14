@@ -8,15 +8,8 @@ var Social = React.createClass({
     return(
       <div className="container">
 
-        <div className="col-lg-12">
-          <div className="panel panel-danger">
-            <div className="panel-heading">
-              <h3 className="panel-title">Social</h3>
-            </div>
-            <div className="panel-body">
-              Panel content
-            </div>
-          </div>
+        <div className="col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10">
+          For future development, we'd like to allow users to opt-in to leaderboards to compete and compare with other users for motivation.  
         </div>
 
       </div>

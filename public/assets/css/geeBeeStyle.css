@@ -7,6 +7,16 @@
     }
 }
 
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#home-text{
+    text-align: justify;
+    font-size: 18px;
+}
+
 .main-text {
     background-image: url(/assets/images/honey-bee-water-buckfast-59829.jpeg);
     -webkit-text-fill-color: transparent;
@@ -70,8 +80,9 @@ li {
     padding: 10px;
 }
 
-.label {
+label {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .create-update-form {
