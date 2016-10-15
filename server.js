@@ -99,8 +99,8 @@ app.get('/logs', function (req, res) {
 console.log('creating post', 'logs/create');
 
 app.post('/logs/create', function (req, res) {
-  logs.insertOne(['userId', 'userName', 'bgMgdl', 'readingType', 'notes', 'dateTimeActual'], [req.body.userId, req.body.userName, req.body.bgMgdl, req.body.readingType, req.body.notes, req.body.dateTimeActual], function () {
-    res.redirect('/logs');
+  logs.insertOne(['bgMgdl', 'readingType', 'notes', 'dateTimeActual'], [ req.body.bgMgdl, req.body.readingType, req.body.notes, req.body.dateTimeActual], function () {
+    res.redirect('/Log');
   });
 });
 //

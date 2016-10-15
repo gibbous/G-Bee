@@ -27385,7 +27385,7 @@
 	                { htmlFor: "exampleInputDate" },
 	                "Date"
 	              ),
-	              React.createElement("input", { type: "date", name: "date", className: "form-control", id: "formControlsDate", placeholder: "Enter Date" })
+	              React.createElement("input", { type: "date", name: "dateTimeActual", className: "form-control", id: "formControlsDate", placeholder: "Enter Date" })
 	            ),
 	            React.createElement(
 	              "div",
@@ -27405,7 +27405,7 @@
 	                { htmlFor: "exampleInputNumber" },
 	                "Blood Glucose Reading (mg/dL)"
 	              ),
-	              React.createElement("input", { type: "number", name: "reading", className: "form-control", id: "formControlsReading", placeholder: "100" })
+	              React.createElement("input", { type: "number", name: "bgMgdl", className: "form-control", id: "formControlsReading", placeholder: "100" })
 	            ),
 	            React.createElement(
 	              "div",
@@ -27417,7 +27417,7 @@
 	              ),
 	              React.createElement(
 	                "select",
-	                { className: "form-control", name: "type", id: "formControlsSelect" },
+	                { className: "form-control", name: "readingType", id: "formControlsSelect" },
 	                React.createElement("option", { value: "" }),
 	                React.createElement(
 	                  "option",

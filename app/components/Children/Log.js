@@ -15,7 +15,7 @@ var Log = React.createClass({
 
                <div className="form-group">
                 <label htmlFor="exampleInputDate">Date</label>
-                <input type="date" name="date" className="form-control" id="formControlsDate" placeholder="Enter Date" />
+                <input type="date" name="dateTimeActual" className="form-control" id="formControlsDate" placeholder="Enter Date" />
               </div>
               <div className="form-group">
                 <label htmlFor="exampleInputTime">Time</label>
@@ -23,11 +23,11 @@ var Log = React.createClass({
               </div>
               <div className="form-group">
                 <label htmlFor="exampleInputNumber">Blood Glucose Reading (mg/dL)</label>
-                <input type="number" name="reading" className="form-control" id="formControlsReading" placeholder="100" />
+                <input type="number" name="bgMgdl" className="form-control" id="formControlsReading" placeholder="100" />
               </div>
                <div className="form-group">
                 <label htmlFor="exampleSelect1">Test Options</label>
-                <select className="form-control" name="type" id="formControlsSelect">
+                <select className="form-control" name="readingType" id="formControlsSelect">
                   <option value=""></option>
                   <option value="a">Out of Bed (fasting)</option>
                   <option value="b">After Breakfast</option>

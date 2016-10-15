@@ -50,7 +50,7 @@ module.exports = (
     {/* If user selects Profile then show the appropriate component*/}
     <Route path='Profile' component={Profile} />
     {/*If user selects any other path... we get the Home Route*/}
-        <IndexRoute component={Home} />
+       <IndexRoute component={Home} />
 
   </Route>
 
