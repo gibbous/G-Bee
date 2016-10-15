@@ -64,4 +64,4 @@ Our application is G-Bee, the Blood Glucose tracking app. Our goal is to inspire
 
 https://trello.com/b/SntazucZ/g-bee
 
-![G-Bee trello.png](../blob/master/screeshots/trello.png)
+![G-Bee trello.png](/screeshots/trello.png)
