@@ -1,0 +1,220 @@
+@keyframes filling {
+    from {
+        background-position: center 25%;
+    }
+    to {
+        background-position: center 50%;
+    }
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#home-text{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.main-text {
+    background-image: url(/assets/images/honey-bee-water-buckfast-59829.jpeg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: #FFFFFF;
+    padding-top: 20px;
+    font-size: 170px;
+    font-family: 'Bungee Inline', cursive;
+    animation: filling 3s ease forwards;
+}
+
+.second-text {
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 3px 3px #000;
+    color: #ffff19;
+    font-size: 30px;
+}
+
+body {
+    background: yellow;
+    background-image: url(/assets/images/honeycomb.jpg);
+    text-align: center;
+    color: gray;
+}
+
+li {
+    background: #c38988;
+    margin: 5px;
+    padding: 5px;
+}
+
+.mainBTN {
+    background-color: #000;
+    color: #ffff19;
+}
+
+.mainBTN:hover {
+    background-color: #595959;
+    color: #ffff19;
+}
+
+.mainIcons{
+    padding-left: 2px;
+}
+
+.container {
+    background: white;
+}
+
+.menu-panel {
+    background: #FFF275;
+    border-radius: 25px;
+    border: 2px solid #FF8C42;
+    padding-bottom: 10px;
+}
+
+.menu-bee {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    border: 2px solid #FF8C42;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.create-update-form {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+
+#timer { 
+    padding-top:20px;
+    padding-bottom:25px;
+}
+
+#resources { 
+    padding-top:40px;
+    padding-bottom:25px;
+}
+
+#resources h1 { 
+    font-size:60px;
+    font-weight: strong;
+}
+
+#resources p { 
+    text-align: left;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+#resources a { 
+    font-size:20px;
+    color:#000;
+}
+
+
+
+.yay {
+    color: green;
+    font-size: 19px;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 4px;
+}
+
+.uh-oh {
+    color: red;
+    font-size: 19px;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 4px;
+}
+
+.clip-svg {
+  width: 0;
+  height: 0;
+}
+
+.clip-caption {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.clip-each {
+  display: block;
+  position: relative;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  -webkit-clip-path: url("#hexagon-clip");
+  clip-path: url("#hexagon-clip");
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin: 0 auto;
+}
+
+a.clip-each:hover {
+  background: sandybrown;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.clip-gradient {
+  background: #222;
+  width: 160px;
+  height: 160px;
+}
+
+.clip-gradient .clip-caption {
+  color: #fff;
+}
+
+.clip-border {
+  background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);  
+  background: linear-gradient(150deg, #aebcbf 0%,#6e7774 50%,#333 61%,#333 100%);
+  width: 160px;
+  height: 160px;
+  margin-top: 7px;
+  color: #222;
+}
+
+.clip-border::after {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  right: 4%;
+  bottom: 4%;
+  margin: 0 auto;
+  background: #faf9a8;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  -webkit-clip-path: url("#hexagon-clip");
+  clip-path: url("#hexagon-clip");
+  z-index: -1;
+}
+
+
+  .clip-block {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .clip-border {
+    margin-top: 20px;
+  }
+}
