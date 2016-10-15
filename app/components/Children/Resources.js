@@ -8,7 +8,7 @@ var Resources = React.createClass({
     return(
       <div className="container">
 
-        <div className="col-lg-12" id="resources">
+        <div className="col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10" id="resources">
           
           <p>
           <a href="https://www.accu-chek.com/testing-blood-sugar/when-test-your-blood-sugar/" target="_blank">

@@ -35,9 +35,17 @@ var Graph = React.createClass({
 
   render() {
     return (
-      <div>
-        <h2>Profile Name</h2>
-        <Line data={data} />
+      <div className="container">
+
+        <div className="col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10">
+          <h3>Keep your numbers in the sweet spot! </h3>
+          <h4>The American Diabetes Association recommends a fasting plasma glucose level of 70–130 mg/dL (3.9-7.2 mmol/L) and after meals less than 180 mg/dL (10 mmol/L).</h4>
+        </div>
+        
+        <div>
+          <Line data={data} />
+        </div>
+
       </div>
     );
   }

@@ -27570,13 +27570,26 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { className: 'container' },
 	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Profile Name'
+	        'div',
+	        { className: 'col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10' },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Keep your numbers in the sweet spot! '
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'The American Diabetes Association recommends a fasting plasma glucose level of 70\u2013130 mg/dL (3.9-7.2 mmol/L) and after meals less than 180 mg/dL (10 mmol/L).'
+	        )
 	      ),
-	      _react2.default.createElement(_reactChartjs.Line, { data: data })
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_reactChartjs.Line, { data: data })
+	      )
 	    );
 	  }
 	});
@@ -53231,23 +53244,195 @@
 	      { className: "container" },
 	      React.createElement(
 	        "div",
-	        { className: "col-lg-12" },
+	        { className: "col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10" },
+	        React.createElement(
+	          "h3",
+	          null,
+	          " Your total score: 1234 "
+	        ),
+	        React.createElement(
+	          "h3",
+	          null,
+	          " Your average BG: 120"
+	        ),
 	        React.createElement(
 	          "div",
-	          { className: "panel panel-danger" },
+	          { className: "clip-block" },
 	          React.createElement(
-	            "div",
-	            { className: "panel-heading" },
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
 	            React.createElement(
-	              "h3",
-	              { className: "panel-title" },
-	              "Badges"
+	              "div",
+	              { className: "clip-caption yay" },
+	              " ",
+	              React.createElement("i", { className: "fa fa-diamond fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Shine On!"
 	            )
 	          ),
 	          React.createElement(
-	            "div",
-	            { className: "panel-body" },
-	            "Panel content"
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              " ",
+	              React.createElement("i", { className: "fa fa-angellist fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Groovy "
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          "div",
+	          { className: "clip-block" },
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              React.createElement("i", { className: "fa fa-bullseye fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              "On Target!"
+	            )
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption uh-oh" },
+	              React.createElement("i", { className: "fa fa-life-buoy fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Low Reading"
+	            )
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              React.createElement("i", { className: "fa fa-flask fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Scientist!"
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          "div",
+	          { className: "clip-block" },
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              React.createElement("i", { className: "fa fa-fighter-jet fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Top Gun!"
+	            )
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              React.createElement("i", { className: "fa fa-fort-awesome fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Awesome!"
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          "div",
+	          { className: "clip-block" },
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              React.createElement("i", { className: "fa fa-gift fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Gifted!"
+	            )
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              React.createElement("i", { className: "fa fa-star fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Star Power!"
+	            )
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              React.createElement("i", { className: "fa fa-heartbeat fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              "Sweetheart "
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          "div",
+	          { className: "clip-block" },
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption yay" },
+	              " ",
+	              React.createElement("i", { className: "fa fa-hand-spock-o fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " Live Long & Prosper"
+	            )
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "#", className: "clip-each clip-border" },
+	            React.createElement(
+	              "div",
+	              { className: "clip-caption uh-oh" },
+	              React.createElement("i", { className: "fa fa-ambulance fa-lg", "aria-hidden": "true" }),
+	              " ",
+	              React.createElement("br", null),
+	              " High Reading (>250)"
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          "svg",
+	          { className: "clip-svg" },
+	          React.createElement(
+	            "defs",
+	            null,
+	            React.createElement(
+	              "clipPath",
+	              { id: "hexagon-clip", clipPathUnits: "objectBoundingBox" },
+	              React.createElement("polygon", { points: "0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5" })
+	            )
 	          )
 	        )
 	      )
@@ -53277,7 +53462,7 @@
 	      { className: "container" },
 	      React.createElement(
 	        "div",
-	        { className: "col-lg-12", id: "resources" },
+	        { className: "col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10", id: "resources" },
 	        React.createElement(
 	          "p",
 	          null,
@@ -53335,8 +53520,29 @@
 	      { className: "container" },
 	      React.createElement(
 	        "div",
-	        { className: "col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10" },
-	        "For future development, we'd like to allow users to opt-in to leaderboards to compete and compare with other users for motivation."
+	        { className: "row" },
+	        React.createElement(
+	          "div",
+	          { className: "col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10" },
+	          React.createElement(
+	            "div",
+	            { className: "media" },
+	            React.createElement(
+	              "div",
+	              { className: "media-body" },
+	              React.createElement(
+	                "p",
+	                { className: "text-muted text-left", id: "home-text" },
+	                "For future development, we'd like to allow users to opt-in to leaderboards to compete and compare with other users for motivation. "
+	              )
+	            ),
+	            React.createElement(
+	              "div",
+	              { className: "media-right media-middle" },
+	              React.createElement("img", { className: "media-object", alt: "Bee with Heart", src: "../assets/images/beeReward.jpg", width: "190" })
+	            )
+	          )
+	        )
 	      )
 	    );
 	  }
